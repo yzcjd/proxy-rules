@@ -1,4 +1,4 @@
-# 订阅转换：(dler)[https://sub.dler.io/]，填入远端配置。
+# 订阅转换：[dler](https://sub.dler.io/)， 填入远端配置。
 
 
 ## clash 规则（白名单）：
