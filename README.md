@@ -1,8 +1,8 @@
-# 使用方法：随便找个订阅转换，将config内容替换成本项目的地址。
+# 订阅转换：(dler)[https://sub.dler.io/]，填入远端配置。
 
 
-## clash 规则（白名单）地址：
-https%3A%2F%2Fraw.githubusercontent.com%2Fyzcjd%2Fproxy-rules%2Fmain%2Fclash%25E8%2587%25AA%25E7%2594%25A8%25E8%25A7%2584%25E5%2588%2599.ini
+## clash 规则（白名单）：
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
 #### 特点
 根据节点名分类地区；
