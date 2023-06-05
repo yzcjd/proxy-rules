@@ -10,6 +10,6 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 #### 根据节点名分类地区；统一节点名称，如美国节点名改 US、沪日 IEPL 简写成 JP IEPL，“游戏x5 韩国”简写成“KR game”
 
 .
-下一阶段：clash：、特定网站走专线、负载均衡
-下下阶段：surfboard
+#### 下一阶段：clash：、特定网站走专线、负载均衡
+#### 下下阶段：surfboard
 待更新咕咕咕
