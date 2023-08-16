@@ -4,6 +4,9 @@
 ### clash 规则（白名单）：
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
+### clash 轻量规则（白名单）：
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini](https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
+
 ### 特点
 #### 1.测速链接使用“ https://github.com ”，测速间隔 30 秒，相差 150 ms 才切换节点。
 #### 2.节点根据名字分类地区，目前只有自动选择。TG 可选 All、HK、SG 分组内延迟最低；
