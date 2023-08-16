@@ -5,7 +5,7 @@
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
 ### clash 轻量规则（白名单）：
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini](https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
 ### 特点
 #### 1.测速链接使用“ https://github.com ”，测速间隔 30 秒，相差 150 ms 才切换节点。
