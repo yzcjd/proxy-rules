@@ -1,5 +1,6 @@
 ## 订阅转换：[dler](https://sub.dler.io/)， 填入远端配置。
 
+.
 
 ### ① clash 规则（白名单）：
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
@@ -14,7 +15,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 #### 4. 
 ##### ①号规则：只有自动选择，分组为 港日新韩美+全部；
 ##### ②号规则：包含手动选择，港日新支持自动选择（其他：手动选择分组），适合自建使用。
-——————————————————————————————————————————————————————————————————
+———————————————————————————————————————
+.
 ### ③ Surfboard 规则（玩具版）
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 
