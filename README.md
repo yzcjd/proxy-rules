@@ -18,9 +18,6 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 #### 特点
 ##### 1. 港日新+手动；
 ##### 2. 还没想到，但是前面写了个1
-———————————————————————————————————————
-
-.
 
 .
 
