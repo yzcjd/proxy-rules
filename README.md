@@ -6,7 +6,7 @@
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
 ### 特点
-##### 1. 测速链接使用“ https://api.v2fly.org/checkConnection.svgz ”，测速间隔 30 秒，相差 150 ms 才切换节点；
+##### 1. 测速链接使用“ http://www.gstatic.com/generate_204 ”，测速间隔 30 秒，低延迟地区相差 50 ms 切换节点、高延迟地区相差 70ms、100ms 切换节点；
 ##### 2. 多地区自动选择；
 ##### 3. TG 可选 All、HK、SG 分组内延迟最低。
 
