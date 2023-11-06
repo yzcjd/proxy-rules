@@ -55,3 +55,5 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 #### 下一阶段：clash：专线组（特定网站走专线）、分地区负载均衡、IP 锁定地区
 #### 下下阶段：完善 Surfboard 规则
 待更新咕咕咕
+
+##### 项目查看统计 ![](https://github.com/yzcjd/proxy-rules/Pawdroid.svg)
