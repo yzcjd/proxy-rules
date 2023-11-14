@@ -1,5 +1,6 @@
-## 订阅转换：[dler](https://sub.dler.io/)， 填入远端配置。
-#### Clashmeta内核可用 [肥羊转换](sub.v1.mk)
+### Clash订阅转换：[dler](https://sub.dler.io/) 
+### Clashmeta订阅转换： [肥羊转换](sub.v1.mk)
+### 远程配置框填入以下规则。
 
 .
 
