@@ -1,8 +1,11 @@
 ### Clash订阅转换：[墙洞转换](https://sub.dler.io/) 
 ### Clashmeta订阅转换： [肥羊转换](sub.v1.mk)
-### 远程配置框填入以下规则。
 
-.
+。
+
+### ----------  远程配置框填入以下规则   ----------
+
+。
 
 ### ① clash 规则（白名单）：
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
@@ -12,7 +15,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 ##### 2. 多地区自动选择；
 ##### 3. TG 可选 All、HK、SG 分组内延迟最低。
 
-.
+。
 
 ### ② clash 轻量规则（白名单）：
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
