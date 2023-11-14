@@ -1,4 +1,5 @@
 ## 订阅转换：[dler](https://sub.dler.io/)， 填入远端配置。
+#### Clashmeta内核可用 [肥羊转换](sub.v1.mk)
 
 .
 
