@@ -1,6 +1,9 @@
-### Clash订阅转换：[墙洞转换](https://sub.dler.io/) 
-### Clashmeta订阅转换： [肥羊转换](sub.v1.mk)
-### ----------  「远程配置」填入规则   ----------
+### Clash 订阅转换：[墙洞转换](https://sub.dler.io/) 
+### Clashmeta 订阅转换： [肥羊转换](sub.v1.mk)
+
+，
+
+# ----------  「远程配置」填入规则   ----------
 
 ，
 
@@ -21,8 +24,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 .
 #### 特点
 ##### 1. 港日新+手动；
-##### 2. 还没想到，但是前面写了个1
-
+##### 2. 测速链接使用“ https://github.com ”，所以延迟结果比常规高。
+##### 3. 该规则 surfboard 不可套用（因为是 https 链接）。
 .
 
 ### ③ clash TG 优化规则：
@@ -32,15 +35,17 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 ##### 1. TG 延迟测速“ http://91.108.56.200 ”，多地区自动选择；
 ps：+86 手机号注册的 TG 使用 DC5 新加坡服务器。如果你不是 DC5，自行更改链接（查看 Clash 连接日志）。
 ##### 2. 有 Clash 延迟测速，方便对比。
+##### 3. 该测试不准，测试超时 ≠ 连不上 Telegram
 
 .
 
-### ④ clash 薯条机场节点名简化规则：
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cnix.ini
+### ④ clash 严格模式 ⭐️
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
-##### 1. TG 优化规则修改，仅针对“薯条CNIX”机场简化节点名；
-##### 2. 还没想到，但是前面写了个1
+##### 测速链接使用 “ https://www.google.com/search/about-this-result ” ，测试本地网络 => 节点 => Google 美国服务。
+##### ps：各网站服务器遍布全球，可以看出节点的国际互联情况。
+##### 该规则 surfboard 不可套用（因为是 https 链接）。
 
 .
 ———————————————————————————————————————
