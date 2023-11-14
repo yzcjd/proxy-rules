@@ -1,4 +1,4 @@
-### Clash订阅转换：[dler](https://sub.dler.io/) 
+### Clash订阅转换：[墙洞转换](https://sub.dler.io/) 
 ### Clashmeta订阅转换： [肥羊转换](sub.v1.mk)
 ### 远程配置框填入以下规则。
 
