@@ -49,7 +49,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 
 .
 
-### ④ clash 分地区负载均衡【load】
+### ⑤ clash 分地区负载均衡【load】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 .
 #### 特点
