@@ -9,7 +9,7 @@
 
 ，
 
-### ① clash 规则（白名单）：
+### ① clash 规则（白名单）【clash.ini】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
 ### 特点
@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
 ，
 
-### ② clash 轻量规则（白名单）：
+### ② clash 轻量规则（白名单）【lite】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 .
 #### 特点
@@ -28,7 +28,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 ##### 3. 该规则 surfboard 不可套用（因为是 https 链接）。
 .
 
-### ③ clash TG 优化规则：
+### ③ clash TG 优化规则【tg】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 .
 #### 特点
@@ -39,7 +39,7 @@ ps：+86 手机号注册的 TG 使用 DC5 新加坡服务器。如果你不是 D
 
 .
 
-### ④ clash 严格模式 ⭐️
+### ④ clash 严格模式 ⭐️ 【cool】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
@@ -49,6 +49,16 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 
 .
 
+### ④ clash 分地区负载均衡【load】
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
+.
+#### 特点
+##### 测速链接同cool。
+##### 请确定机场的节点为同一地区，否则会有人机验证。
+测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 ip 搜索。
+##### 该规则 surfboard 不可套用（因为是 https 链接）。
+
+.
 ———————————————————————————————————————
 
 .
