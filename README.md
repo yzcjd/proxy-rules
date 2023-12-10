@@ -4,6 +4,8 @@
 ，
 
 ## ----------  「远程配置」填入规则   ----------
+备注：clash 规则除了 cool 和 GitHub 优化，其他软件均可套用。暂未单独写规则，分流不细致仅仅是能用。
+推荐：如果看电报比较多，推荐 TG 优化，如果浏览网站比较杂，推荐 cool 订阅。
 
 ，
 
@@ -13,7 +15,7 @@
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
 ### 特点
-##### 1. 测速链接使用“ http://www.gstatic.com/generate_204 ”，测速间隔 30 秒，低延迟地区相差 50 ms 切换节点、高延迟地区相差 70ms、100ms 切换节点；
+##### 1. 测速链接使用“ http://www.gstatic.com/generate_204 ”（clash 默认），测速间隔 30 秒，低延迟地区相差 50 ms 切换节点、高延迟地区相差 70ms、100ms 切换节点；
 ##### 2. 多地区自动选择；
 ##### 3. TG 可选 All、HK、SG 分组内延迟最低。
 
@@ -53,7 +55,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 .
 #### 特点
-##### 测速链接同cool。
+##### 测速链接同 TG 优化。
+##### 每个域名用不同的节点，举例：可以实现 TG 视频、YouTube、TED 同时播放网速不冲突。
 ##### 请确定机场的节点为同一地区，否则会有人机验证。
 测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 ip 搜索。
 ##### 该规则 surfboard 不可套用（因为是 https 链接）。
@@ -62,13 +65,13 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 ———————————————————————————————————————
 
 .
-### ① Surfboard 规则（玩具版）
+### Surfboard 规则（玩具版）
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 
 ### 特点
 ##### 1. 测速链接使用 “ http://cp.cloudflare.com ” ，测速间隔 30 秒，相差 150 ms 才切换节点。
 ##### 2. 多地区自动选择，TG 可选分组；
-##### 3. 当前只是套用 Clash 模板，先用着，以后再更新。Clash也能用，延迟测试数值较低。
+##### 3. 当前只是套用 Clash 模板，先用着，以后再更新。Clash 也能用，延迟测试数值较低。
 
 .
 
