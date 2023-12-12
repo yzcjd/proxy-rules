@@ -4,7 +4,8 @@
 ，
 
 ## ----------  「远程配置」填入规则   ----------
-##### 备注：clash 规则除了 cool 和 GitHub 优化，其他软件均可套用。暂未单独写规则，分流不细致仅仅是能用。
+##### 备注 1：测速链接不同只是为了方便自动选择，测试结果延迟高低对节点无影响。
+##### 备注 2：Clash 规则除了 Cool、Fastly 和 GitHub 优化，其他软件均可套用。暂未单独写规则，分流不细致仅仅是能用。
 ##### 推荐：如果看电报比较多，推荐 TG 优化，如果浏览网站比较杂，推荐 cool 订阅。
 
 ，
@@ -41,17 +42,25 @@ ps：+86 手机号注册的 TG 使用 DC5 新加坡服务器。如果你不是 D
 
 .
 
-### ④ clash 严格模式 ⭐️ 【cool】
+### ④ clash Google 优化 【cool】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
 ##### 测速链接使用 “ https://www.google.com/search/about-this-result ” ，测试本地网络 => 节点 => Google 美国服务。
 ##### ps：各网站服务器遍布全球，可以看出节点的国际互联情况。
 ##### 该规则 surfboard 不可套用（因为是 https 链接）。
-
 .
 
-### ⑤ clash 分地区负载均衡【load】
+### ⑤ clash Fastly 优化 【fastly】
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
+.
+#### 特点
+##### 测速链接使用 “ https://imgur.com/ ” ，测试本地网络 => 节点 => Google Fastly节点。
+##### ps：各网站服务器遍布全球，可以看出节点的国际互联情况。
+##### 该规则 surfboard 不可套用（因为是 https 链接）。
+.
+
+### ⑥ clash 分地区负载均衡【load】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 .
 #### 特点
