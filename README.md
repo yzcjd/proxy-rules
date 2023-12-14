@@ -55,7 +55,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
-##### 测速链接使用 “ https://imgur.com/ ” ，测试本地网络 => 节点 => Google Fastly节点。
+##### 测速链接使用 “ https://imgur.com/ ” ，测试本地网络 => 节点 => 美国 Fastly 节点。
 ##### ps：各网站服务器遍布全球，可以看出节点的国际互联情况。
 ##### 该规则 surfboard 不可套用（因为是 https 链接）。
 .
