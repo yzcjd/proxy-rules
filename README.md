@@ -27,7 +27,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 .
 #### 特点
 ##### 1. 港日新+手动；
-##### 2. 测速链接使用“ https://github.com ”，所以延迟结果比常规高。
+##### 2. 测速链接使用“ https://www.google.com ”，真实谷歌延迟。
 ##### 3. 该规则 surfboard 不可套用（因为是 https 链接）。
 .
 
@@ -42,13 +42,12 @@ ps：+86 手机号注册的 TG 使用 DC5 新加坡服务器。如果你不是 D
 
 .
 
-### ④ clash Google 优化 【cool】
+### ④ clash 大杂烩优化 【cool】★
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
-##### 测速链接使用 “ https://www.google.com/search/about-this-result ” ，测试本地网络 => 节点 => Google 美国服务。
-##### ps：各网站服务器遍布全球，可以看出节点的国际互联情况。
-##### 该规则 surfboard 不可套用（因为是 https 链接）。
+##### Telegram、GitHub 等常用网站优化。
+##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 .
 
 ### ⑤ clash Fastly 优化 【fastly】
