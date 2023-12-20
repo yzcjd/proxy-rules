@@ -34,18 +34,38 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 ##### 3. 该规则 surfboard 不可套用（因为是 https 链接）。
 .
 
-### ③ clash TG 优化规则【tg】
+### ③ TG 优化规则1【tg】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 .
 #### 特点
-##### 1. TG 延迟测速“ http://91.108.56.200 ”，多地区自动选择；
+##### 1. TG 延迟测速“ http://91.108.56.200 ”新加坡 DC5 服务器，多地区自动选择；
 ps：+86 手机号注册的 TG 使用 DC5 新加坡服务器。如果你不是 DC5，自行更改链接（查看 Clash 连接日志）。
 ##### 2. 有 Clash 延迟测速，方便对比。
-##### 3. 该测试不准，测试超时 ≠ 连不上 Telegram
+##### 3. 该测试不准，图一乐。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
+ clash TG 优化规则1【tg】
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 
 .
 
-### ④ clash 大杂烩优化 【cool】★
+.
+### ③ TG 优化规则2【tg2】
+#### 特点
+##### 1. TG 延迟测速“ http://149.154.164.250 ”，英国伦敦服务器，多地区自动选择；
+ps：如果你不是 DC5 ，可能连接的服务器不同。可查看 Clash 连接日志更换测速链接。
+##### 2. 有 Clash 延迟测速，方便对比。
+##### 3. 该测试不准，测试超时 ≠ 连不上 Telegram
+.
+
+### ④ clash Google优化 【cool】
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
+.
+#### 特点
+##### 测试 本地 =>> 节点 =>> Google 美国服务器，能看出节点的国际互联情况；
+##### 参考值：300ms ；合格值：600ms 我猜的。
+##### 该规则 surfboard 不可套用（内含 https 测速链接）。
+.
+
+### ⑤ clash 大杂烩优化 【test】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
@@ -53,7 +73,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 .
 
-### ⑤ clash Fastly 优化 【fastly】
+### ⑥ clash Fastly 优化 【fastly】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
