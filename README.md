@@ -73,6 +73,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 #### 特点
 ##### Telegram、GitHub 等常用网站优化。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
+##### 测试中，存在问题：Clash 只能使用第一个分组的测速链接，导致后面的测速都无效。
 .
 
 ### ⑥ clash Fastly 优化 【fastly】
