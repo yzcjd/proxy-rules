@@ -42,6 +42,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 ps：+86 手机号注册的 TG 使用 DC5 新加坡服务器。如果你不是 DC5，自行更改链接（查看 Clash 连接日志）。
 ##### 2. 有 Clash 延迟测速，方便对比。
 ##### 3. 该测试不准，图一乐。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
+##### 4. 以免误用 IEPL 刷 TG，默认使用选择的地区连接 Telegram ，推荐切换成所有节点（TG Ping）。
  clash TG 优化规则1【tg】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 
@@ -54,6 +55,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 ps：如果你不是 DC5 ，可能连接的服务器不同。可查看 Clash 连接日志更换测速链接。
 ##### 2. 有 Clash 延迟测速，方便对比。
 ##### 3. 该测试不准，测试超时 ≠ 连不上 Telegram
+##### 4. 以免误用 IEPL 刷 TG，默认使用选择的地区连接 Telegram，推荐切换成所有节点（TG Ping）。
 .
 
 ### ④ clash Google优化 【cool】
