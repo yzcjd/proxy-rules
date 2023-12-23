@@ -43,7 +43,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 ##### 1. TG 延迟测速“ http://91.108.56.200 ”新加坡 DC5 服务器，多地区自动选择；
 ps：+86 手机号注册的 TG 使用 DC5 新加坡服务器。如果你不是 DC5，自行更改链接（查看 Clash 连接日志）。
 ##### 2. 有 Clash 延迟测速，方便对比。
-##### 3. 该测试不准，图一乐。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
+##### 3. 该测试不准，仅参考。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
 ##### 4. 以免误用 IEPL 刷 TG，默认使用选择的地区连接 Telegram ，推荐切换成所有节点（TG Ping）。
 
 .
