@@ -65,7 +65,7 @@ ps：如果你不是 DC5 ，可能连接的服务器不同。可查看 Clash 连
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
-##### 测试 本地 =>> 节点 =>> Google 美国服务器，能看出节点的国际互联情况；
+##### 测试 本地 => 节点 => Google 美国服务器，能看出节点的国际互联情况；
 ##### 参考值：300ms ；合格值：600ms 我猜的。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 .
