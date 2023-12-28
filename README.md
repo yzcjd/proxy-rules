@@ -96,7 +96,6 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 ##### 每个域名用不同的节点，举例：可以实现 TG 视频、YouTube、TED 同时播放网速不冲突。
 ##### 请确定机场的节点为同一地区，否则会有人机验证。
 测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 ip 搜索。
-##### 该规则 surfboard 不可套用（因为是 https 链接）。
 
 .
 ———————————————————————————————————————
