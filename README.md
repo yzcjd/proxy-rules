@@ -68,7 +68,19 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ##### 1. 测速链接“ https://api.v2fly.org/checkConnection.svgz ”。多地区自动选择；
 .
 
-### ④ clash Google优化 【cool】
+.
+
+### ④ clash 分地区负载均衡【load】
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
+.
+#### 特点
+##### 测速链接同 Clash 默认。
+##### 每个域名用不同的节点，举例：可以实现 TG 视频、YouTube、TED 同时播放网速不冲突。
+##### 请确定机场的节点为同一地区，否则会有人机验证。
+测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 ip 搜索。
+
+
+### ⑤ clash Google优化 【cool】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
@@ -78,32 +90,13 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 ##### 效果不佳、命名模糊。以后可能改成自用规则。如果你在用这个规则，注意规则变动。
 .
 
-### ⑤ clash 大杂烩优化 【test】
+### ⑥ clash 大杂烩优化 【test】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.test.ini
 .
 #### 特点
 ##### Telegram、GitHub 等常用网站优化。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
-##### 测试中，随时修改。
-.
-
-### ⑥ clash Fastly 优化 【fastly】
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/file/clash.cool.ini
-.
-#### 特点
-##### 测速链接使用 “ https://imgur.com/ ” ，测试本地网络 => 节点 => 美国 Fastly 节点。
-##### ps：各网站服务器遍布全球，可以看出节点的国际互联情况。
-##### 该规则 surfboard 不可套用（因为是 https 链接）。
-.
-
-### ⑥ clash 分地区负载均衡【load】
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
-.
-#### 特点
-##### 测速链接同 Clash 默认。
-##### 每个域名用不同的节点，举例：可以实现 TG 视频、YouTube、TED 同时播放网速不冲突。
-##### 请确定机场的节点为同一地区，否则会有人机验证。
-测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 ip 搜索。
+##### 测试中，随时修改，改完可能替换 cool。
 
 .
 ———————————————————————————————————————
