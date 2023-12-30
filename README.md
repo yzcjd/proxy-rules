@@ -21,7 +21,7 @@
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
 ### 特点
-##### 1. 测速链接使用“ http://www.gstatic.com/generate_204 ”（clash 默认），测速间隔 30 秒，低延迟地区相差 50 ms 切换节点、高延迟地区相差 70ms、100ms 切换节点；
+##### 1. 测速链接使用“ http://www.gstatic.com/generate_204 ”（clash 默认）
 ##### 2. 多地区自动选择；
 ##### 3. TG 可选 All、HK、SG 分组内延迟最低。
 
@@ -63,7 +63,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 
 ### ③ TG 优化规则3【tg3】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
-#### 综合中文频道和英文频道规则，适合日常浏览。需要有相应地区。
+#### 综合中文频道和英文频道规则，适合日常浏览。需要有相应地区。不加手动选择了。
 ##### 1. 测速链接“ https://api.v2fly.org/checkConnection.svgz ”。多地区自动选择；
 .
 
@@ -77,7 +77,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 
 ### ⑤ clash 大杂烩优化 【test】
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/file/clash.test.ini
 .
 #### 特点
 ##### Telegram、GitHub 等常用网站优化。
@@ -86,7 +86,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 
 ### ⑥ clash Fastly 优化 【fastly】
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/file/clash.cool.ini
 .
 #### 特点
 ##### 测速链接使用 “ https://imgur.com/ ” ，测试本地网络 => 节点 => 美国 Fastly 节点。
@@ -114,6 +114,10 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 ##### 1. 测速链接使用 “ http://cp.cloudflare.com ” ，测速间隔 30 秒，相差 150 ms 才切换节点。
 ##### 2. 多地区自动选择，TG 可选分组；
 ##### 3. 当前只是套用 Clash 模板，先用着，以后再更新。Clash 也能用，延迟测试数值较低。
+
+.
+
+#### 部分规则已归档，点击file文件夹查看
 
 .
 
