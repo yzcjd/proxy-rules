@@ -75,6 +75,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 ##### 测试 本地 => 节点 => Google 美国服务器，能看出节点的国际互联情况；
 ##### 参考值：300ms ；合格值：600ms 我猜的。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
+##### 效果不佳、命名模糊。以后可能改成自用规则。如果你在用这个规则，注意规则变动。
 .
 
 ### ⑤ clash 大杂烩优化 【test】
