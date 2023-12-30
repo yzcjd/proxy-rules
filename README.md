@@ -59,6 +59,14 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ##### 5. 均衡的节点，测试规则 tg、tg2 都是 400ms，越南、泰国、哥斯达黎加。
 .
 
+.
+
+### ③ TG 优化规则3【tg3】
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
+#### 综合中文频道和英文频道规则，适合日常浏览。需要有相应地区。
+##### 1. 测速链接“ https://api.v2fly.org/checkConnection.svgz ”。多地区自动选择；
+.
+
 ### ④ clash Google优化 【cool】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
