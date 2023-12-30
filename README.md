@@ -57,7 +57,9 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ##### 4. 有 Clash 延迟测速，方便对比。
 ##### 5. 该测试不准，测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
 
-### 备注：均衡的节点，测试规则 tg、tg2 都是 400ms，如：越南、泰国、哥斯达黎加。
+.
+
+##### 备注：均衡的节点，测试规则 tg、tg2 都是 400ms，如：越南、泰国、哥斯达黎加。
 .
 
 .
@@ -65,7 +67,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ### ③ TG 优化规则3【tg3】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ##### 1. 综合中文频道和英文频道规则，适合日常浏览，需要有相应地区，至少需要有新加坡，具体国家点开规则查看。
-##### 2. 没加手动选择。
+##### 2. 没加对应网站的手动选择。
 ##### 3. 测速链接“ https://api.v2fly.org/checkConnection.svgz ”。多地区自动选择；
 ##### 4. Surfboard 不可套用。
 .
