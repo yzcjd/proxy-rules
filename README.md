@@ -43,7 +43,6 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 ##### 1. TG 延迟测速“ http://91.108.56.200 ”，多地区自动选择；
 ##### 2. 有 Clash 延迟测速，方便对比。
 ##### 3. 该测试不准，仅参考。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
-##### 4. 以免误用 IEPL 刷 TG，默认使用选择的地区连接 Telegram ，推荐切换成所有节点（TG Ping）。
 
 .
 
@@ -53,17 +52,19 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 #### 英文频道规则（英国服务器）
 ##### 1. TG 延迟测速“ http://149.154.164.250 ”。多地区自动选择；
-##### 2. 有 Clash 延迟测速，方便对比。
-##### 3. 该测试不准，测试超时 ≠ 连不上 Telegram 。
-##### 4. 以免误用 IEPL 刷 TG，默认使用选择的地区连接 Telegram，推荐切换成所有节点（TG Ping）。
-##### 5. 均衡的节点，测试规则 tg、tg2 都是 400ms，越南、泰国、哥斯达黎加。
+##### 2. 默认使用选择的地区上网（不要看延迟），只有 Telegram 英文频道走规则。受影响：英文频道、Telegraph、TG预览
+##### 3. 如果你要优化 TG1 访问，推荐使用香港自动或者新加坡自动，不影响 TG2 自动选择 。
+##### 4. 有 Clash 延迟测速，方便对比。
+##### 5. 该测试不准，测试超时 ≠ 连不上 Telegram 。
+##### 6. 均衡的节点，测试规则 tg、tg2 都是 400ms，如：越南、泰国、哥斯达黎加。
 .
 
 .
 
 ### ③ TG 优化规则3【tg3】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
-#### 综合中文频道和英文频道规则，适合日常浏览。需要有相应地区。不加手动选择了。
+#### 综合中文频道和英文频道规则，适合日常浏览，需要有相应地区，至少需要有新加坡，具体国家点开规则查看。
+#### 没加手动选择。
 ##### 1. 测速链接“ https://api.v2fly.org/checkConnection.svgz ”。多地区自动选择；
 .
 
