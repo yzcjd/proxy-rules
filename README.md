@@ -55,17 +55,19 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ##### 2. 默认使用选择的地区上网（不要看延迟），只有 Telegram 英文频道走规则。受影响：英文频道、Telegraph、TG预览
 ##### 3. 如果你要优化 TG1 访问，推荐使用香港自动或者新加坡自动，不影响 TG2 自动选择 。
 ##### 4. 有 Clash 延迟测速，方便对比。
-##### 5. 该测试不准，测试超时 ≠ 连不上 Telegram 。
-##### 6. 均衡的节点，测试规则 tg、tg2 都是 400ms，如：越南、泰国、哥斯达黎加。
+##### 5. 该测试不准，测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
+
+### 备注：均衡的节点，测试规则 tg、tg2 都是 400ms，如：越南、泰国、哥斯达黎加。
 .
 
 .
 
 ### ③ TG 优化规则3【tg3】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
-#### 综合中文频道和英文频道规则，适合日常浏览，需要有相应地区，至少需要有新加坡，具体国家点开规则查看。
-#### 没加手动选择。
-##### 1. 测速链接“ https://api.v2fly.org/checkConnection.svgz ”。多地区自动选择；
+##### 1. 综合中文频道和英文频道规则，适合日常浏览，需要有相应地区，至少需要有新加坡，具体国家点开规则查看。
+##### 2. 没加手动选择。
+##### 3. 测速链接“ https://api.v2fly.org/checkConnection.svgz ”。多地区自动选择；
+##### 4. Surfboard 不可套用。
 .
 
 .
@@ -106,9 +108,9 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.test.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 
 ### 特点
-##### 1. 测速链接使用 “ http://cp.cloudflare.com ” ，测速间隔 30 秒，相差 150 ms 才切换节点。
+##### 1. 测速链接使用 “ http://cp.cloudflare.com ” 
 ##### 2. 多地区自动选择，TG 可选分组；
-##### 3. 当前只是套用 Clash 模板，先用着，以后再更新。Clash 也能用，延迟测试数值较低。
+##### 3. 当前只是套用 Clash 模板，先用着，以后再更新。Clash 也能用，延迟测试数值偏低。
 
 .
 
