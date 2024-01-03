@@ -75,23 +75,22 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 ip 搜索。
 .
 
-### ⑤ clash Google优化 【cool】
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
+### ⑤ clash Google优化 【google】
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.google.ini
 .
 #### 特点
 ##### 测试 本地 => 节点 => Google 美国服务器，能看出节点的国际互联情况；
 ##### 参考值：300ms ；合格值：600ms 我猜的。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
-##### 效果不佳、命名模糊。以后可能改成自用规则。如果你在用这个规则，注意规则变动。
 .
 
-### ⑥ clash 大杂烩优化 【test】
+### ⑥ 自用规则 【cool】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.test.ini
 .
 #### 特点
-##### Telegram、GitHub 等常用网站优化。
+##### 全局规则，Google 可选地区，Telegram、GitHub 等常用网站优化。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
-##### 测试中，随时修改，改完可能替换 cool。
+##### 测试中，随时修改。自用不一定适合你，我没有固定地区需求，甚至可能取消地区分组。
 .
 ———————————————————————————————————————
 
