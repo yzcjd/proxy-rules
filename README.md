@@ -13,26 +13,41 @@
 ##### 日常浏览 => V2fly 规则、TG 选择 HK 或 SG
 .
 
-### ① clash 规则（白名单）【clash.ini】
+.
+
+### ① 白名单规则【clash.ini】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
 ### 特点
 ##### 1. 测速链接使用“ http://www.gstatic.com/generate_204 ”（clash 默认）
-##### 2. 多地区自动选择；
-##### 3. TG 可选 All、HK、SG 分组内延迟最低。
+##### 2. 中国域名、ip 走直连，其他走代理。
+##### 3. 多地区自动选择，TG 可选 All、HK、SG 分组内延迟最低。
 .
 
-### ② clash 轻量规则（白名单）【lite】
+.
+
+### ② 轻量白名单规则【lite】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 .
 #### 特点
 ##### 1. 港日新+手动；
 ##### 2. 测速链接使用“ https://www.google.com ”，真实谷歌延迟。
 ##### 3. 该规则 surfboard 不可套用（因为是 https 链接）。
+.
 
 .
 
-### ③ TG 优化规则1【tg】
+### ③ 全局规则【global】
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.global.ini
+.
+#### 特点
+##### 1. 全局规则 + 地区分组；
+##### 2. 该规则 surfboard 不可套用（因为是 https 链接）。
+.
+
+.
+
+### TG 优化规则1【tg】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 .
 #### 中文频道规则（新加坡服务器）
@@ -41,7 +56,9 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 ##### 3. 该测试不准，仅参考。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
 .
 
-### ③ TG 优化规则2【tg2】
+.
+
+### TG 优化规则2【tg2】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 #### 英文频道规则（英国服务器）
 ##### 1. TG 延迟测速“ http://149.154.164.250 ”。多地区自动选择；
@@ -49,14 +66,11 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ##### 3. 如果你要优化 TG1 访问，推荐使用香港自动或者新加坡自动，不影响 TG2 自动选择 。
 ##### 4. 有 Clash 延迟测速，方便对比。
 ##### 5. 该测试不准，测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
-
-.
-##### 备注：均衡的节点，测试规则 tg、tg2 都是 400ms，如：越南、泰国、哥斯达黎加。
 .
 
 .
 
-### ③ TG 优化规则3【tg3】
+### TG 优化规则3【tg3】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg3.ini
 ##### 1. 综合中文频道和英文频道规则，以及德国服务器规则，适合综合浏览。
 #####    如果你只有热门地区，不推荐使用此规则。至少需要有新加坡（暂时移除，因为必定选中新加坡），具体国家点开规则查看。
@@ -64,8 +78,12 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg3.ini
 ##### 3. 测速链接“ https://api.v2fly.org/checkConnection.svgz ”。多地区自动选择；
 ##### 4. Surfboard 不可套用。
 .
+##### 备注：均衡的节点，测试规则 tg、tg2 都是 400ms，如：越南、泰国、哥斯达黎加。
+.
 
-### ④ clash 分地区负载均衡【load】
+.
+
+### 分地区负载均衡【load】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 .
 #### 特点
@@ -75,7 +93,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 ip 搜索。
 .
 
-### ⑤ clash Google优化 【google】
+### Google优化【google】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.google.ini
 .
 #### 特点
@@ -84,8 +102,20 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.google.ini
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 .
 
-### ⑥ 自用规则 【cool】
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.test.ini
+.
+
+### V2fly 规则【v2fly】
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.v2fly.ini
+.
+#### 特点
+##### Sagernet 默认测速链接，也许能测试节点是否送中；
+##### 该规则 surfboard 不可套用（内含 https 测速链接）。
+.
+
+.
+
+### 自用规则 【cool】
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
 ##### 全局规则，Google 可选地区，Telegram、GitHub 等常用网站优化。
