@@ -57,7 +57,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 .
 
 ### ③ TG 优化规则 all【tg.all】
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.all.ini
 ##### 1. 综合中文频道和英文频道规则，以及德国服务器规则，适合综合浏览。
 #####    如果你只有热门地区，不推荐使用此规则。至少需要有新加坡（暂时移除，因为必定选中新加坡），具体国家点开规则查看。
 ##### 2. 没加对应网站的手动选择。
