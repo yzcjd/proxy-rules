@@ -120,9 +120,9 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.v2fly.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
-##### 全局规则，Google 可选地区，Telegram、GitHub 等常用网站优化。
+##### Google 可选地区，Telegram、GitHub 等常用网站优化。
+##### 测试中，随时修改。不一定适合你，我没有固定地区需求，甚至可能取消地区分组。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
-##### 测试中，随时修改。自用不一定适合你，我没有固定地区需求，甚至可能取消地区分组。
 .
 ———————————————————————————————————————
 
