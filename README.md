@@ -62,8 +62,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 #### 英文频道规则（英国服务器）
 ##### 1. TG 延迟测速“ http://149.154.164.250 ”。多地区自动选择；
-##### 2. 默认使用选择的地区上网（不要看延迟），只有 Telegram 英文频道走规则。受影响：英文频道、Telegraph、TG预览
-##### 3. 如果你要优化 TG1 访问，推荐使用香港自动或者新加坡自动，不影响 TG2 自动选择 。
+##### 2. 延迟结果为 Telegram 英文频道延迟。默认使用选择的地区上网（不要看延迟），受影响：英文频道、Telegraph、TG预览。
+##### 3. 如果你要优化 TG1 访问，推荐使用香港自动或者新加坡自动（非最优），不影响 TG2 自动选择 。
 ##### 4. 有 Clash 延迟测速，方便对比。
 ##### 5. 该测试不准，测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
 .
