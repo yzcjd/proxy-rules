@@ -22,6 +22,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 ##### 1. 测速链接使用“ http://www.gstatic.com/generate_204 ”（clash 默认）
 ##### 2. 中国域名、ip 走直连，其他走代理。
 ##### 3. 多地区自动选择，TG 可选 All、HK、SG 分组内延迟最低。
+##### surfboard 可用
 .
 
 .
@@ -30,9 +31,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 .
 #### 特点
-##### 1. 港日新+手动；
-##### 2. 测速链接使用“ https://www.google.com ”，真实谷歌延迟。
-##### 3. 该规则 surfboard 不可套用（因为是 https 链接）。
+##### 港日新+手动
+##### surfboard 可用
 .
 
 .
@@ -41,8 +41,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.global.ini
 .
 #### 特点
-##### 1. 全局规则 + 地区分组；
-##### 2. 该规则 surfboard 不可套用（因为是 https 链接）。
+##### 1. 全局规则 + 地区分组
+##### surfboard 可用
 .
 
 .
@@ -54,6 +54,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 ##### 1. TG 延迟测速“ http://91.108.56.200 ”，多地区自动选择；
 ##### 2. 有 Clash 延迟测速，方便对比。
 ##### 3. 该测试不准，仅参考。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
+##### surfboard 可用
 .
 
 .
@@ -66,6 +67,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ##### 3. 如果你要优化 TG1 访问，推荐使用香港自动或者新加坡自动（非最优），不影响 TG2 自动选择 。
 ##### 4. 有 Clash 延迟测速，方便对比。
 ##### 5. 该测试不准，测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
+##### surfboard 可用
 .
 
 .
@@ -79,6 +81,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg3.ini
 ##### 4. Surfboard 不可套用。
 .
 ##### 备注：均衡的节点，测试规则 tg、tg2 都是 400ms，如：越南、泰国、哥斯达黎加。
+##### surfboard 可用
 .
 
 .
@@ -91,6 +94,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 ##### 每个域名用不同的节点，举例：可以实现 TG 视频、YouTube、TED 同时播放网速不冲突。
 ##### 请确定机场的节点为同一地区，否则会有人机验证。
 测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 ip 搜索。
+##### surfboard 可用
 .
 
 .
@@ -134,8 +138,10 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 ##### 1. 测速链接使用 “ http://cp.cloudflare.com ” 
 ##### 2. 多地区自动选择，TG 可选分组；
 ##### 3. 当前只是套用 Clash 模板，先用着，以后再更新。Clash 也能用，延迟测试数值偏低。
+.
 
 .
+
 #### 部分规则已归档，点击file文件夹查看
 .
 #### 下一阶段：clash：专线组（特定网站走专线）、分地区负载均衡、IP 锁定地区
