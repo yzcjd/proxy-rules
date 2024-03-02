@@ -117,7 +117,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.google.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.v2fly.ini
 .
 #### 特点
-##### Sagernet 默认测速链接，也许能测试节点是否送中；
+##### Sagernet 默认测速链接 ；
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 .
 
@@ -127,7 +127,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.v2fly.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
-##### Google 可选地区，Telegram、GitHub 等常用网站优化。
+##### Google 服务可选地区，Telegram、GitHub 等常用网站优化。
 ##### 测试中，随时修改。不一定适合你，我没有固定地区需求，甚至可能取消地区分组。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 .
@@ -140,13 +140,13 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 ### 特点
 ##### 1. 测速链接使用 “ http://cp.cloudflare.com ” 
 ##### 2. 多地区自动选择，TG 可选分组；
-##### 3. 当前只是套用 Clash 模板，先用着，以后再更新。Clash 也能用，延迟测试数值偏低。
+##### 3. 当前只是套用 Clash 模板，先用着，以后再写。Clash 也能用，延迟测试数值偏低。
 .
 
 .
 
 #### 部分规则已归档，点击file文件夹查看
 .
-#### 下一阶段：clash：专线组（特定网站走专线）、分地区负载均衡、IP 锁定地区
+#### 下一阶段：clash：专线组（特定网站走专线）、分地区负载均衡、某服务定位锁定地区
 #### 下下阶段：完善 Surfboard 规则
 待更新咕咕咕
