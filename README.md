@@ -103,7 +103,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 .
 
 ### Google优化【google】
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.google.ini
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/file/clash.google.ini
 .
 #### 特点
 ##### 测试 本地 => 节点 => Google 美国服务器，能看出节点的国际互联情况；
@@ -134,7 +134,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 ———————————————————————————————————————
 
 .
-### Surfboard 规则（玩具版）
+### Surfboard 规则（白名单玩具版）
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 
 ### 特点
@@ -147,6 +147,6 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 
 #### 部分规则已归档，点击file文件夹查看
 .
-#### 下一阶段：clash：专线组（特定网站走专线）、分地区负载均衡、某服务定位锁定地区
+#### 下一阶段：clash：专线组（特定网站走专线）、分地区负载均衡、锁定“某服务”定位
 #### 下下阶段：完善 Surfboard 规则
 待更新咕咕咕
