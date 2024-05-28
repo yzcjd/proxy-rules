@@ -15,7 +15,7 @@
 #### 总结：
 ##### 日常浏览 => V2fly 规则（TG 选择 HK 或 SG）
 ##### 同时看多个视频网站 =>  负载均衡规则（load）
-##### Telegram 重度用户 => TG 优化规则 三选一，常看中文频道选 tg 规则，常看欧美频道线路的话选 tg2 或 tg3（tg3 需要有冷门线路）；
+##### Telegram 重度用户 => TG 优化规则 三选一，常看中文频道选 tg 规则，常看欧美频道线路的话选 tg2 或 tg3（tg3 需有港新以外的线路）；
 .
 
 .
@@ -79,12 +79,9 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 
 ### TG 优化规则3【tg3】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg3.ini
-##### 1. 综合中文频道和英文频道规则，以及德国服务器规则，适合综合浏览。
-#####    如果你只有热门地区，不推荐使用此规则。具体国家点开规则查看。
-##### 2. 测速链接“ https://api.v2fly.org/checkConnection.svgz ”。多地区自动选择；
+##### 1. 综合中文频道和英文频道规则，适合综合浏览。
+##### 2. 港新测试 “ http://91.108.56.200 ”，其它测试 “ http://149.154.164.250 ”。常用地区自动选择；
 ##### 4. Surfboard 不可套用。
-.
-##### 备注：均衡的节点，测试规则 tg、tg2 都是 400ms，如：越南、泰国、哥斯达黎加。
 .
 
 .
@@ -147,6 +144,6 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 
 #### 部分规则已归档，点击file文件夹查看
 .
-#### 下一阶段：clash：专线组（特定网站走专线）、分地区负载均衡、锁定“某服务”定位
+#### 下一阶段：clash：专线组（特定网站走专线）、锁定“某服务”定位
 #### 下下阶段：完善 Surfboard 规则
 待更新咕咕咕
