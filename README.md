@@ -22,8 +22,7 @@
 
 ### ① 白名单规则【clash.ini】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
-
-### 特点
+.
 ##### 1. 测速链接使用“ http://www.gstatic.com/generate_204 ”（clash 默认）
 ##### 2. 中国域名、ip 走直连，其他走代理。
 ##### 3. 多地区自动选择，TG 可选 All、HK、SG 分组内延迟最低。
@@ -35,7 +34,6 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 ### ② 轻量白名单规则【lite】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 .
-#### 特点
 ##### 港日新+手动
 ##### surfboard 可用
 .
@@ -45,7 +43,6 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 ### ③ 全局规则【global】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.global.ini
 .
-#### 特点
 ##### 1. 全局规则 + 地区分组 。解决全局模式下不能自动选择的问题。
 ##### surfboard 可用
 .
@@ -114,7 +111,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/file/clash.google.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.v2fly.ini
 .
 #### 特点
-##### Sagernet 默认测速链接 ；
+##### Sagernet 默认测速链接（https），避免机场劫持测速结果 ；
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 .
 
