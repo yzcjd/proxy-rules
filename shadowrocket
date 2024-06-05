@@ -1,0 +1,132 @@
+# Shadowrocket Rules
+# by tg频道yzc020
+# build time: UTC 2024-06-04 7000:01:01
+
+[General]
+# 默认关闭 ipv6 支持，如果需要请手动开启
+ipv6 = false
+bypass-system = true
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, e.crashlytics.com, captive.apple.com, sequoia.apple.com, seed-sequoia.siri.apple.com
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+dns-server = https://1.12.12.12/dns-query, https://223.5.5.5/dns-query
+
+[Rule]
+
+#内网直连
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+
+#手动添加的直连列表
+#苹果域名及其CDN直连
+DOMAIN-SUFFIX,a3.mzstatic.com,Direct
+DOMAIN-SUFFIX,a1.mzstatic.com,Direct
+DOMAIN-SUFFIX,a2.mzstatic.com,Direct
+DOMAIN-SUFFIX,a5.mzstatic.com,Direct
+DOMAIN-SUFFIX,a4.mzstatic.com,Direct
+DOMAIN-SUFFIX,appldnld.apple.com,Direct
+DOMAIN-SUFFIX,cdn-cn1.apple-mapkit.com,Direct
+DOMAIN-SUFFIX,apps.apple.com,Direct
+DOMAIN-SUFFIX,apps.mzstatic.com,Direct
+DOMAIN-SUFFIX,cdn-cn2.apple-mapkit.com,Direct
+DOMAIN-SUFFIX,cdn-cn3.apple-mapkit.com,Direct
+DOMAIN-SUFFIX,appleid.cdn-apple.com,Direct
+DOMAIN-SUFFIX,cdn-cn4.apple-mapkit.com,Direct
+DOMAIN-SUFFIX,cdn2.apple-mapkit.com,Direct
+DOMAIN-SUFFIX,cdn1.apple-mapkit.com,Direct
+DOMAIN-SUFFIX,cdn4.apple-mapkit.com,Direct
+DOMAIN-SUFFIX,cdn3.apple-mapkit.com,Direct
+DOMAIN-SUFFIX,cds.apple.com,Direct
+DOMAIN-SUFFIX,adcdownload.apple.com,Direct
+DOMAIN-SUFFIX,cl2.apple.com.edgekey.net.globalredir.akadns.net,Direct
+DOMAIN-SUFFIX,cl2-cn.apple.com,Direct
+DOMAIN-SUFFIX,cl2.apple.com,Direct
+DOMAIN-SUFFIX,cl4-cn.apple.com,Direct
+DOMAIN-SUFFIX,cl1.apple.com,Direct
+DOMAIN-SUFFIX,cl5.apple.com,Direct
+DOMAIN-SUFFIX,cl3.apple.com,Direct
+DOMAIN-SUFFIX,cl4.apple.com,Direct
+DOMAIN-SUFFIX,clientflow.apple.com,Direct
+DOMAIN-SUFFIX,configuration.apple.com,Direct
+DOMAIN-SUFFIX,cstat.apple.com,Direct
+DOMAIN-SUFFIX,download.developer.apple.com,Direct
+DOMAIN-SUFFIX,gsp11-cn.ls.apple.com,Direct
+DOMAIN-SUFFIX,gsp12-cn.ls.apple.com,Direct
+DOMAIN-SUFFIX,gsp13-cn.ls.apple.com,Direct
+DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net,Direct
+DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net,Direct
+DOMAIN-SUFFIX,gsp4-cn.ls.apple.com,Direct
+DOMAIN-SUFFIX,gsp5-cn.ls.apple.com,Direct
+DOMAIN-SUFFIX,gspe19-cn-ssl.ls.apple.com,Direct
+DOMAIN-SUFFIX,gspe19-cn.ls.apple.com,Direct
+DOMAIN-SUFFIX,gspe21-ssl.ls.apple.com,Direct
+DOMAIN-SUFFIX,iadsdk.apple.com,Direct
+DOMAIN-SUFFIX,gspe35-ssl.ls.apple.com,Direct
+DOMAIN-SUFFIX,images.apple.com.akadns.net,Direct
+DOMAIN-SUFFIX,images.apple.com.edgekey.net.globalredir.akadns.net,Direct
+DOMAIN-SUFFIX,icloud.cdn-apple.com,Direct
+DOMAIN-SUFFIX,init-p01md.apple.com,Direct
+DOMAIN-SUFFIX,images.apple.com,Direct
+DOMAIN-SUFFIX,init-p01st.push.apple.com,Direct
+DOMAIN-SUFFIX,iosapps.itunes.g.aaplimg.com,Direct
+DOMAIN-SUFFIX,iphone-ld.apple.com,Direct
+DOMAIN-SUFFIX,is1-ssl.mzstatic.com,Direct
+DOMAIN-SUFFIX,init-s01st.push.apple.com,Direct
+DOMAIN-SUFFIX,is1.mzstatic.com,Direct
+DOMAIN-SUFFIX,is2-ssl.mzstatic.com,Direct
+DOMAIN-SUFFIX,is2.mzstatic.com,Direct
+DOMAIN-SUFFIX,is3-ssl.mzstatic.com,Direct
+DOMAIN-SUFFIX,is3.mzstatic.com,Direct
+DOMAIN-SUFFIX,is4-ssl.mzstatic.com,Direct
+DOMAIN-SUFFIX,is4.mzstatic.com,Direct
+DOMAIN-SUFFIX,is5-ssl.mzstatic.com,Direct
+DOMAIN-SUFFIX,is5.mzstatic.com,Direct
+DOMAIN-SUFFIX,mesu.apple.com,Direct
+DOMAIN-SUFFIX,itunesconnect.apple.com,Direct
+DOMAIN-SUFFIX,itunes.apple.com,Direct
+DOMAIN-SUFFIX,ocsp.apple.com,Direct
+DOMAIN-SUFFIX,pancake.apple.com,Direct
+DOMAIN-SUFFIX,oscdn.apple.com,Direct
+DOMAIN-SUFFIX,s.mzstatic.com,Direct
+DOMAIN-SUFFIX,music.apple.com,Direct
+DOMAIN-SUFFIX,store.apple.com.edgekey.net.globalredir.akadns.net,Direct
+DOMAIN-SUFFIX,store.apple.com.edgekey.net,Direct
+DOMAIN-SUFFIX,store.apple.com,Direct
+DOMAIN-SUFFIX,store.storeimages.cdn-apple.com,Direct
+DOMAIN-SUFFIX,support.apple.com,Direct
+DOMAIN-SUFFIX,swcdn.g.aaplimg.com,Direct
+DOMAIN-SUFFIX,swcdn.apple.com,Direct
+DOMAIN-SUFFIX,swcatalog.apple.com,Direct
+DOMAIN-SUFFIX,reserve-prime.apple.com,Direct
+DOMAIN-SUFFIX,updates-http.cdn-apple.com.akadns.net,Direct
+DOMAIN-SUFFIX,swscan.apple.com,Direct
+DOMAIN-SUFFIX,swdist.apple.com,Direct
+DOMAIN-SUFFIX,updates-http.cdn-apple.com,Direct
+DOMAIN-SUFFIX,updates.cdn-apple.com,Direct
+DOMAIN-SUFFIX,www.apple.com.edgekey.net.globalredir.akadns.net,Direct
+DOMAIN-SUFFIX,www.apple.com.edgekey.net,Direct
+DOMAIN-SUFFIX,valid.apple.com,Direct
+DOMAIN-SUFFIX,www.apple.com,Direct
+
+#银行软件直连
+DOMAIN-SUFFIX,paypalobjects.com,Direct
+DOMAIN-SUFFIX,transferwise.com,Direct
+
+#中国域名直连
+DOMAIN-SUFFIX,cn,DIRECT
+GEOIP,CN,DIRECT
+
+#强制代理的域名
+#RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/AppleNews/AppleNews.list,PROXY
+
+#全部未匹配走代理
+FINAL,PROXY
+
+#链接重写
+[URL Rewrite]
+^https?://(www.)?(g|google)\.cn https://www.google.com 302
+#bing
+
+[MITM]
+hostname = *.google.cn,*.googlevideo.com
