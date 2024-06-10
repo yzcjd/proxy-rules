@@ -137,6 +137,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 ##### 3. 当前只是套用 Clash 模板，先用着，以后再写。Clash 也能用，延迟测试数值偏低。
 .
 
+### ShadowRocket 规则（玩具版）
+##### 配置 => 右上角"+" => 粘贴链接： https://raw.githubusercontent.com/yzcjd/proxy-rules/main/shadowrocket.ini
 .
 
 #### 部分规则已归档，点击file文件夹查看
