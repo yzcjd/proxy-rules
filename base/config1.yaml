@@ -9,9 +9,13 @@ dns:
   enable: true
   ipv6: false
   default-nameserver:
+# 广州移动
     - 211.136.192.6
+# 腾讯
     - 119.29.29.29
+# OpenDNS
     - 208.67.220.220
+# CNNIC，最慢但通常能查询到，保底
     - 1.2.4.8
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
