@@ -16,7 +16,7 @@ dns:
     enable: true
     listen: '127.0.0.1:8853'
     default-nameserver: [211.136.192.6, 119.29.29.29, 208.67.220.220, 1.2.4.8]
-    nameserver: [114.114.114.114, 223.5.5.5, 'https://223.6.6.6/dns-query', 'https://dns.alidns.com/dns-query', 'https://doh.360.cn/dns-query', 'https://223.5.5.5/dns-query']
+    nameserver: [8.8.4.4, 8.8.8.8, 'https://8.8.4.4/dns-query', 'https://dns.alidns.com/dns-query', 'https://doh.360.cn/dns-query', 'https://8.8.8.8/dns-query']
     fallback: ['https://dns.rubyfish.cn/dns-query', 'https://doh.pub/dns-query', 'https://rubyfish.cn/dns-query', 'https://public.dns.iij.jp/dns-query', 'tls://8.8.4.4', 'https://cloudflare-dns.com/dns-query', 'https://dns.rubyfish.cn/dns-query', 'https://1.1.1.1/dns-query', 'tls://1.1.1.1:853', 'tls://8.8.8.8:853']
     ipv6: true
     enhanced-mode: fake-ip
@@ -101,22 +101,22 @@ fake-ip-filter:
 
 ; 归档
 
-;port: 7890
-;socks-port: 7891
-;allow-lan: true
-;mode: Rule
-;log-level: info
-;ipv6: true
-;external-controller: 127.0.0.1:9090
-;dns:
-;  enable: true
-;  ipv6: false
-;  default-nameserver:
+#port: 7890
+#socks-port: 7891
+#allow-lan: true
+#mode: Rule
+#log-level: info
+#ipv6: true
+#external-controller: 127.0.0.1:9090
+#dns:
+#  enable: true
+#  ipv6: false
+#  default-nameserver:
 # 广州移动
-;    - 211.136.192.6
+#   - 211.136.192.6
 # 腾讯
-;    - 119.29.29.29
+#    - 119.29.29.29
 # OpenDNS
-;    - 208.67.220.220
+#   - 208.67.220.220
 # CNNIC，最慢但通常能查询到，保底
-;    - 1.2.4.8
+#    - 1.2.4.8
