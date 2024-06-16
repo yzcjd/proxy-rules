@@ -20,7 +20,7 @@ dns:
     fallback: ['https://dns.rubyfish.cn/dns-query', 'https://doh.pub/dns-query', 'https://rubyfish.cn/dns-query', 'https://public.dns.iij.jp/dns-query', 'tls://8.8.4.4', 'https://cloudflare-dns.com/dns-query', 'https://dns.rubyfish.cn/dns-query', 'https://1.1.1.1/dns-query', 'tls://1.1.1.1:853', 'tls://8.8.8.8:853']
     ipv6: true
     enhanced-mode: fake-ip
-    fallback-filter: { geoip: true, geoip-code: CN, ipcidr: [240.0.0.0/4], domain: [{+.google.com, +.facebook.com, +.twitter.com, +.tiktokv.com, +.bytedance.map.fastly, +.tiktok.com, +.youtube.com, +.xn--ngstr-lra8j.com, +.google.cn, +.googleapis.cn, +.googleapis.com, +.gvt1.com] }
+    fallback-filter: { geoip: true, geoip-code: CN, ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.twitter.com, +.tiktokv.com, +.bytedance.map.fastly, +.tiktok.com, +.youtube.com, +.google.cn, +.googleapis.cn, +.googleapis.com, +.gvt1.com] }
 nameserver-policy:
     www.baidu.com: 114.114.114.114
     www.taobao.com: 223.5.5.5
@@ -97,26 +97,3 @@ fake-ip-filter:
     - '*.ipv6.microsoft.com'
     - '*.*.xboxlive.com'
     - speedtest.cros.wr.pvp.net
-
-
-; 归档
-
-#port: 7890
-#socks-port: 7891
-#allow-lan: true
-#mode: Rule
-#log-level: info
-#ipv6: true
-#external-controller: 127.0.0.1:9090
-#dns:
-#  enable: true
-#  ipv6: false
-#  default-nameserver:
-# 广州移动
-#   - 211.136.192.6
-# 腾讯
-#    - 119.29.29.29
-# OpenDNS
-#   - 208.67.220.220
-# CNNIC，最慢但通常能查询到，保底
-#    - 1.2.4.8
