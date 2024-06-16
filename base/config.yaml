@@ -16,11 +16,11 @@ dns:
     enable: true
     listen: '127.0.0.1:8853'
     default-nameserver: [211.136.192.6, 119.29.29.29, 208.67.220.220, 1.2.4.8]
-    nameserver: [8.8.4.4, 8.8.8.8, 'https://8.8.4.4/dns-query', 'https://dns.alidns.com/dns-query', 'https://doh.360.cn/dns-query', 'https://8.8.8.8/dns-query']
+    nameserver: [211.136.192.6, 119.29.29.29, 208.67.220.220, 1.2.4.8, 8.8.4.4, 8.8.8.8, 'https://8.8.4.4/dns-query', 'https://8.8.8.8/dns-query', 'https://doh.360.cn/dns-query']
     fallback: ['https://dns.rubyfish.cn/dns-query', 'https://doh.pub/dns-query', 'https://rubyfish.cn/dns-query', 'https://public.dns.iij.jp/dns-query', 'tls://8.8.4.4', 'https://cloudflare-dns.com/dns-query', 'https://dns.rubyfish.cn/dns-query', 'https://1.1.1.1/dns-query', 'tls://1.1.1.1:853', 'tls://8.8.8.8:853']
     ipv6: true
     enhanced-mode: fake-ip
-    fallback-filter: { geoip: true, geoip-code: CN, ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.twitter.com, +.tiktokv.com, +.bytedance.map.fastly, +.tiktok.com, +.youtube.com, +.xn--ngstr-lra8j.com, +.google.cn, +.googleapis.cn, +.googleapis.com, +.gvt1.com] }
+    fallback-filter: { geoip: true, geoip-code: CN, ipcidr: [240.0.0.0/4], domain: [{+.google.com, +.facebook.com, +.twitter.com, +.tiktokv.com, +.bytedance.map.fastly, +.tiktok.com, +.youtube.com, +.xn--ngstr-lra8j.com, +.google.cn, +.googleapis.cn, +.googleapis.com, +.gvt1.com] }
 nameserver-policy:
     www.baidu.com: 114.114.114.114
     www.taobao.com: 223.5.5.5
