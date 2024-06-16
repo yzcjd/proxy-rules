@@ -10,6 +10,7 @@ dns:
   ipv6: false
   default-nameserver:
     - 211.136.192.6
+    - 119.29.29.29
     - 208.67.220.220
     - 1.2.4.8
   enhanced-mode: fake-ip
