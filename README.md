@@ -15,7 +15,7 @@
 #### 总结：
 ##### 日常浏览 => V2fly 规则（TG 选择 HK 或 SG）
 ##### 同时看多个视频网站 =>  负载均衡规则（load）
-##### Telegram 重度用户 => TG 优化规则 三选一，常看中文频道选 tg 规则，常看欧美频道线路的话选 tg2 或 tg3（tg3 需有港新以外的线路）；
+##### Telegram 重度用户 => TG 优化规则 三选一，常看中文频道选 tg 规则，常看欧美频道选 tg2 或 tg3（tg3 需有港新澳以外的线路）；
 .
 
 .
@@ -53,6 +53,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.global.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 .
 #### 中文频道规则（新加坡服务器）
+https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 ##### 1. TG 延迟测速“ http://91.108.56.200 ”，多地区自动选择；
 ##### 2. 有 Clash 延迟测速，方便对比。
 ##### 3. 该测试不准，仅参考。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
@@ -66,7 +67,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 #### 英文频道规则（英国服务器）
 ##### 1. TG 延迟测速“ http://149.154.164.250 ”。多地区自动选择；
 ##### 2. 延迟结果为 Telegram 英文频道延迟。默认使用选择的地区上网（不要看延迟），受影响：英文频道、Telegraph、TG预览。
-##### 3. 如果你要优化 TG1 访问，推荐使用香港自动或者新加坡自动（非最优），不影响 TG2 自动选择 。
+##### 3. 如果你要优化 TG 中文频道访问，推荐使用香港自动或者新加坡自动（非最优），不影响 TG2 自动选择 。
 ##### 4. 有 Clash 延迟测速，方便对比。
 ##### 5. 该测试不准，测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
 ##### surfboard 可用
@@ -90,7 +91,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 ##### 测速链接同 Clash 默认。负载均衡模式下延迟无意义，保证你节点带宽足够就行。
 ##### 每个域名用不同的节点，举例：可以实现 TG 视频、YouTube、TED 同时播放网速不冲突。
 ##### 请确定机场的节点为同一地区，否则会有人机验证。
-测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 域名（xx.xx.com）/ ip 搜索。
+测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 域名（xx.xx.com）/ ip 在 ping0.cc / ip.sb 搜索。
 ##### surfboard 可用
 .
 
@@ -134,15 +135,16 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 ### 特点
 ##### 1. 测速链接使用 “ http://cp.cloudflare.com ” 
 ##### 2. 多地区自动选择，TG 可选分组；
-##### 3. 当前只是套用 Clash 模板，先用着，以后再写。Clash 也能用，延迟测试数值偏低。
+##### 3. 当前只是套用 Clash 模板，先用着，以后再写。
+##### 4. 该规则 Clash 也能用，emmm 大可不必。
 .
 
-### ShadowRocket 规则（玩具版）
-##### 配置 => 右上角"+" => 粘贴链接： https://raw.githubusercontent.com/yzcjd/proxy-rules/main/shadowrocket.ini
+### ShadowRocket 规则（白名单玩具版）
+##### 配置 => 右上角"+" => 粘贴链接： https://raw.githubusercontent.com/yzcjd/proxy-rules/main/shadowrocket.ini => 选择配置使用。
 .
 
-#### 部分规则已归档，点击file文件夹查看
+#### 部分规则已归档，点击 file 文件夹查看
 .
-#### 下一阶段：clash：专线组（特定网站走专线）、锁定“某服务”定位
+#### 下一阶段：clash：专线组（特定网站走专线）、锁定某个网站/服务的定位
 #### 下下阶段：完善 Surfboard 规则
 待更新咕咕咕
