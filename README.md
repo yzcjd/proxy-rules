@@ -7,7 +7,7 @@
 
 .
 ##### 备注 1：测速链接不同只是为了方便自动选择，测试结果延迟高低对节点无影响。
-##### 备注 2：Clash 规则其他软件也可套用，包括 singbox，已标出例外。暂未给其他软件写规则，其他软件的分流应该是自动适配。
+##### 备注 2：Clash 规则其他软件也可套用，包括 singbox，已标出例外。暂未给其他软件写规则，对应的分流应该会自动适配。（singbox 偶尔不兼容）
 .
 
 .
@@ -44,6 +44,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.global.ini
 .
 ##### 1. 全局规则 + 地区分组 。解决全局模式下不能自动选择的问题。
+##### 2. 只有全局，内网直连。没加规则模式。
+##### 3. 如果你某部手机只访问外网，建议关闭订阅自动更新（订阅转换站有时拉取规则会出错）
 ##### surfboard 可用
 .
 
@@ -55,7 +57,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 #### 中文频道规则（新加坡服务器）
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 ##### 1. TG 延迟测速“ http://91.108.56.200 ”，多地区自动选择；
-##### 2. 有 Clash 延迟测速，方便对比。
+##### 2. 有 Clash 延迟测速，方便对比（不可选）。
 ##### 3. 该测试不准，仅参考。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
 ##### surfboard 可用
 .
@@ -79,7 +81,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg3.ini
 ##### 1. 综合中文频道和英文频道规则，适合综合浏览。
 ##### 2. 港新测试 “ http://91.108.56.200 ”，其它测试 “ http://149.154.164.250 ”。常用地区自动选择；
-##### 4. Surfboard 不可套用。
+##### 3. 屏蔽常见广告联盟域名、微信广告，应该不影响使用（测试中）。引用我另一项目的规则，具体查看 https://raw.githubusercontent.com/yzcjd/website-rules/1/REJECT
+##### 4. Surfboard 用这规则偶尔报错。
 .
 
 .
@@ -90,7 +93,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 #### 特点
 ##### 测速链接同 Clash 默认。负载均衡模式下延迟无意义，保证你节点带宽足够就行。
 ##### 每个域名用不同的节点，举例：可以实现 TG 视频、YouTube、TED 同时播放网速不冲突。
-##### 请确定机场的节点为同一地区，否则会有人机验证。
+##### 需确定机场的节点为同一地区，否则可能遇到 Google 人机验证。
 测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 域名（xx.xx.com）/ ip 在 ping0.cc / ip.sb 搜索。
 ##### surfboard 可用
 .
@@ -112,7 +115,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/file/clash.google.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.v2fly.ini
 .
 #### 特点
-##### Sagernet 默认测速链接（https），避免机场劫持测速结果 ；
+##### Sagernet 默认测速链接（https），真实延迟，避免机场劫持测速结果 ；
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 .
 
@@ -123,6 +126,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
 ##### Google 服务可选地区，Telegram、GitHub 等常用网站优化。
+##### 特点略，有兴趣点进去查看。
 ##### 测试中，随时修改。不一定适合你，我没有固定地区需求，甚至可能取消地区分组。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 .
@@ -143,7 +147,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 ##### 配置 => 右上角"+" => 粘贴链接： https://raw.githubusercontent.com/yzcjd/proxy-rules/main/shadowrocket.ini => 选择配置使用。
 .
 
-#### 部分规则已归档，点击 file 文件夹查看
+#### 部分规则已归档，点击 file 文件夹查看。路径不同。
 .
 #### 下一阶段：clash：专线组（特定网站走专线）、锁定某个网站/服务的定位
 #### 下下阶段：完善 Surfboard 规则
