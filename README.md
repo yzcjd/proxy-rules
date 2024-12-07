@@ -12,10 +12,12 @@
 
 .
 
-#### 总结：
-##### 日常浏览 => V2fly 规则（TG 选择 HK 或 SG）
+#### 选购建议：
+##### 不知道怎么用 => 导入第一个规则 clash.ini 试试
+##### 日常浏览 => V2fly 规则（防延迟劫持）
 ##### 同时看多个视频网站 =>  负载均衡规则（load）
-##### Telegram 重度用户 => TG 优化规则 三选一，常看中文频道选 tg 规则，常看欧美频道选 tg2 或 tg3（tg3 需有港新澳以外的线路）；
+##### Telegram 重度用户 => TG 优化规则 三选一，常看中文频道选 tg 规则，常看欧美频道选 tg2 或 tg3（tg3 需有港新澳台马以外线路）；
+##### PS：推荐尝试 GEOIP 规则自动分流
 .
 
 .
@@ -25,7 +27,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 .
 ##### 1. 测速链接使用“ http://www.gstatic.com/generate_204 ”（clash 默认）
 ##### 2. 中国域名、ip 走直连，其他走代理。
-##### 3. 多地区自动选择，TG 可选 All、HK、SG 分组内延迟最低。
+##### 3. 多地区自动选择，TG 可选 All、HK、SG 分组内延迟最低。（已移除）
 ##### surfboard 可用
 .
 
@@ -70,7 +72,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ##### 1. TG 延迟测速“ http://149.154.164.250 ”。多地区自动选择；
 ##### 2. 延迟结果为 Telegram 英文频道延迟。默认使用选择的地区上网（不要看延迟），受影响：英文频道、Telegraph、TG预览。
 ##### 3. 如果你要优化 TG 中文频道访问，推荐使用香港自动或者新加坡自动（非最优），不影响 TG2 自动选择 。
-##### 4. 有 Clash 延迟测速，方便对比。
+##### 4. 有 Clash 延迟测速，方便对比。（已移除）
 ##### 5. 该测试不准，测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
 ##### surfboard 可用
 .
@@ -81,7 +83,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg3.ini
 ##### 1. 综合中文频道和英文频道规则，适合综合浏览。
 ##### 2. 港新测试 “ http://91.108.56.200 ”，其它测试 “ http://149.154.164.250 ”。常用地区自动选择；
-##### 3. 屏蔽常见广告联盟域名、微信广告，应该不影响使用（测试中）。引用我另一项目的规则，具体查看 https://raw.githubusercontent.com/yzcjd/website-rules/1/REJECT
+##### 3. 屏蔽常见广告，尽量无误杀，具体查看 https://raw.githubusercontent.com/yzcjd/website-rules/1/REJECT
 ##### 4. Surfboard 用这规则偶尔报错。
 .
 
@@ -94,13 +96,13 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 ##### 测速链接同 Clash 默认。负载均衡模式下延迟无意义，保证你节点带宽足够就行。
 ##### 每个域名用不同的节点，举例：可以实现 TG 视频、YouTube、TED 同时播放网速不冲突。
 ##### 需确定机场的节点为同一地区，否则可能遇到 Google 人机验证。
-测试网址 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 域名（xx.xx.com）/ ip 在 ping0.cc / ip.sb 搜索。
+测试网页 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 域名（xx.xx.com）/ ip 在 ping0.cc / ip.sb 搜索。
 ##### surfboard 可用
 .
 
 .
 
-### Google优化【google】
+### Google优化【google】（闲置）
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/file/clash.google.ini
 .
 #### 特点
@@ -125,10 +127,11 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.v2fly.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
-##### Google 服务可选地区，Telegram、GitHub 等常用网站优化。
-##### 特点略，有兴趣点进去查看。
+##### Google 服务可选地区（已注释），Telegram、GitHub 等常用网站优化。
+##### 特点略，不好说，瞎鸡儿乱写。有兴趣点进去查看或者试用。
 ##### 测试中，随时修改。不一定适合你，我没有固定地区需求，甚至可能取消地区分组。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
+##### PS：推荐尝试 GEOIP 规则自动优化，手动添加的规则永远有优化空间。
 .
 ———————————————————————————————————————
 
@@ -138,8 +141,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/surfboard.ini
 
 ### 特点
 ##### 1. 测速链接使用 “ http://cp.cloudflare.com ” 
-##### 2. 多地区自动选择，TG 可选分组；
-##### 3. 当前只是套用 Clash 模板，先用着，以后再写。
+##### 2. 多地区自动选择，TG 可选 HK、SG 分组；
+##### 3. 当前只是套用 Clash 模板，先用着，以后再写。（冲浪板支持协议少，可能不写了）
 ##### 4. 该规则 Clash 也能用，emmm 大可不必。
 .
 
