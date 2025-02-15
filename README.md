@@ -56,11 +56,9 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.global.ini
 ### TG 优化规则1【tg】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
 .
-#### 中文频道规则（新加坡服务器）
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg.ini
-##### 1. TG 延迟测速“ http://91.108.56.200 ”，多地区自动选择；
-##### 2. 有 Clash 延迟测速，方便对比（不可选）。
-##### 3. 该测试不准，仅参考。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
+####  中文频道规则（新加坡服务器）
+##### TG 延迟测速“ http://91.108.56.200 ”，多地区自动选择；
+##### 该测试不准，仅参考。测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
 ##### surfboard 可用
 .
 
@@ -72,8 +70,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ##### 1. TG 延迟测速“ http://149.154.164.250 ”。多地区自动选择；
 ##### 2. 延迟结果为 Telegram 英文频道延迟。默认使用选择的地区上网（不要看延迟），受影响：英文频道、Telegraph、TG预览。
 ##### 3. 如果你要优化 TG 中文频道访问，推荐使用香港自动或者新加坡自动（非最优），不影响 TG2 自动选择 。
-##### 4. 有 Clash 延迟测速，方便对比。（已移除）
-##### 5. 该测试不准，测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
+##### 4. 该测试不准，测试超时 ≠ 连不上 Telegram ，有延迟 ≠ 可以用。
 ##### surfboard 可用
 .
 
@@ -82,9 +79,9 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ### TG 优化规则3【tg3】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg3.ini
 ##### 1. 综合中文频道和英文频道规则，适合综合浏览。
-##### 2. 港新测试 “ http://91.108.56.200 ”，其它测试 “ http://149.154.164.250 ”。常用地区自动选择；
-##### 3. 屏蔽常见广告，尽量无误杀，具体查看 https://raw.githubusercontent.com/yzcjd/website-rules/1/REJECT
-##### 4. Surfboard 用这规则偶尔报错。
+##### 2. 港新马台澳测试 “ http://91.108.56.200 ”，其它测试 “ http://149.154.164.250 ”。常用地区自动选择；
+##### 3. 屏蔽常见广告，尽量做到无误杀，具体查看 https://raw.githubusercontent.com/yzcjd/website-rules/1/REJECT
+##### 4. surfboard 用这规则偶尔报错。
 .
 
 .
@@ -129,7 +126,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 #### 特点
 ##### Google 服务可选地区（已注释），Telegram、GitHub 等常用网站优化，浏览网页排除送中节点，看视频排除 IEPL 专线节点。你的线路如果送中，名字添加 sz，浏览网页将不会选中他。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
-##### PS：推荐尝试 GEOIP 规则自动优化，手动添加的规则永远有优化空间。
+##### PS：这仅是本人自用规则。推荐尝试 GEOIP 规则自动分流，手动添加的规则永远有优化空间。
 .
 ———————————————————————————————————————
 
