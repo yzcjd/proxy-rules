@@ -12,13 +12,4 @@ always-reject-url-rewrite = false
 private-ip-answer = true
 dns-direct-fallback-proxy = true
 
-;内网直连、代理软件直连
-RULE-SET,https://raw.githubusercontent.com/yzcjd/website-rules/1/ForceDirect,DIRECT
-;强制直连（自用）
-RULE-SET,https://raw.githubusercontent.com/yzcjd/website-rules/1/DIRECT,DIRECT
-;强制代理（自用）
-RULE-SET,https://raw.githubusercontent.com/yzcjd/website-rules/1/PROXY,PROXY
-;拦截广告（无误杀）
-RULE-SET,https://raw.githubusercontent.com/yzcjd/website-rules/1/REJECT,REJECT
-
 GEOIP,CN,DIRECT,no-resolve
