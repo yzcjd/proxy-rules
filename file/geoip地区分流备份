@@ -1,0 +1,315 @@
+;地区分流观察，先走香港
+
+
+
+; TW 台湾 2845条 1.32.220.4
+;ruleset=HK*,[]GEOIP,TW
+ruleset=TW*,[]GEOIP,TW
+
+; DE 德国 31281条 2.16.1.3
+ruleset=HK*,[]GEOIP,DE
+
+; NL 荷兰 71302条 2.16.18.44
+ruleset=DE*,[]GEOIP,NL
+
+; FR 法国 31763条 2.16.11.5
+ruleset=HK*,[]GEOIP,FR
+
+; US 美国 192048条 35.235.83.31/ 1.179.118.1 ？
+ruleset=HK*,[]GEOIP,US
+
+ruleset=HK*,[]GEOIP,AD
+; AE 沙特阿拉伯 2602条
+ruleset=SG*,[]GEOIP,AE  
+ruleset=HK*,[]GEOIP,AF  
+ruleset=HK*,[]GEOIP,AG 
+ruleset=HK*,[]GEOIP,AI 
+ruleset=HK*,[]GEOIP,AL
+ruleset=HK*,[]GEOIP,AM
+ruleset=HK*,[]GEOIP,AO  
+ruleset=HK*,[]GEOIP,AQ  
+;  AR 阿根廷 4513条
+ruleset=HK*,[]GEOIP,AR  
+ruleset=HK*,[]GEOIP,AS 
+; AT 奥地利 5411条 2.17.96.6
+ruleset=DE*,[]GEOIP,AT 
+; AU 澳大利亚 13086条 1.0.7.238
+ruleset=HK*,[]GEOIP,AU 
+ruleset=HK*,[]GEOIP,AW 
+ruleset=HK*,[]GEOIP,AX 
+ruleset=HK*,[]GEOIP,AZ
+ruleset=HK*,[]GEOIP,BA
+ruleset=HK*,[]GEOIP,BB 
+; BD 孟加拉 3509条 27.124.70.25
+ruleset=HK+SG,[]GEOIP,BD 
+; BE 比利时 5964条 2.17.107.4
+ruleset=HK*,[]GEOIP,BE 
+ruleset=HK*,[]GEOIP,BF
+; BG 保加利亚 2562条 2.20.45.2
+ruleset=HK*,[]GEOIP,BG
+ruleset=HK*,[]GEOIP,BH
+ruleset=HK*,[]GEOIP,BI 
+ruleset=HK*,[]GEOIP,BJ 
+ruleset=HK*,[]GEOIP,BL 
+ruleset=HK*,[]GEOIP,BM 
+ruleset=HK*,[]GEOIP,BN 
+ruleset=HK*,[]GEOIP,BO 
+ruleset=HK*,[]GEOIP,BQ 
+; BR 巴西 20122条 2.16.216.7
+ruleset=JP*,[]GEOIP,BR  
+ruleset=HK*,[]GEOIP,BS 
+ruleset=HK*,[]GEOIP,BT 
+ruleset=HK*,[]GEOIP,BV  
+ruleset=HK*,[]GEOIP,BW  
+ruleset=HK*,[]GEOIP,BY
+ruleset=HK*,[]GEOIP,BZ 
+;ruleset=HK*,[]GEOIP,CA 
+ruleset=HK*,[]GEOIP,CC
+ruleset=HK*,[]GEOIP,CD 
+ruleset=HK*,[]GEOIP,CF 
+ruleset=HK*,[]GEOIP,CG  
+; CH 瑞士 10643条 2.16.12.2
+ruleset=DE*,[]GEOIP,CH  
+ruleset=HK*,[]GEOIP,CI  
+ruleset=HK*,[]GEOIP,CK 
+; CL 智利 2262条 2.18.21.162
+ruleset=TW*,[]GEOIP,CL 
+ruleset=HK*,[]GEOIP,CM 
+;ruleset=HK*,[]GEOIP,CN 
+; CO 哥伦比亚 2995条 2.16.57.4
+ruleset=JP*,[]GEOIP,CO
+ruleset=HK*,[]GEOIP,CR 
+ruleset=HK*,[]GEOIP,CU  
+ruleset=HK*,[]GEOIP,CV
+ruleset=HK*,[]GEOIP,CW 
+ruleset=HK*,[]GEOIP,CX 
+ruleset=HK*,[]GEOIP,CY  
+; CZ 捷克 3937条 2.16.2.4
+ruleset=HK*,[]GEOIP,CZ 
+;ruleset=HK*,[]GEOIP,DE 
+ruleset=HK*,[]GEOIP,DJ
+; DK 丹麦 4549条 2.16.63.2
+ruleset=DE*,[]GEOIP,DK 
+ruleset=HK*,[]GEOIP,DM 
+ruleset=HK*,[]GEOIP,DO 
+ruleset=HK*,[]GEOIP,DZ 
+ruleset=HK*,[]GEOIP,EC 
+ruleset=HK*,[]GEOIP,EE 
+ruleset=HK*,[]GEOIP,EG  
+ruleset=HK*,[]GEOIP,EH 
+ruleset=HK*,[]GEOIP,ER 
+; ES 西班牙 12071条 2.16.8.6
+ruleset=HK*,[]GEOIP,ES 
+ruleset=HK*,[]GEOIP,ET 
+; FI 芬兰 3775条 2.16.171.5
+ruleset=HK*,[]GEOIP,FI  
+ruleset=HK*,[]GEOIP,FJ 
+ruleset=HK*,[]GEOIP,FK 
+ruleset=HK*,[]GEOIP,FM  
+ruleset=HK*,[]GEOIP,FO
+;ruleset=HK*,[]GEOIP,fr
+ruleset=HK*,[]GEOIP,GA 
+; GB 英国 36531条 2.17.4.5
+ruleset=HK*,[]GEOIP,GB
+ruleset=HK*,[]GEOIP,GD
+ruleset=HK*,[]GEOIP,GE 
+ruleset=HK*,[]GEOIP,GF
+ruleset=HK*,[]GEOIP,GG 
+ruleset=HK*,[]GEOIP,GH 
+ruleset=HK*,[]GEOIP,GI 
+ruleset=HK*,[]GEOIP,GL  
+ruleset=HK*,[]GEOIP,GM 
+ruleset=HK*,[]GEOIP,GN 
+ruleset=HK*,[]GEOIP,GP
+ruleset=HK*,[]GEOIP,GQ 
+ruleset=HK*,[]GEOIP,GR 
+ruleset=HK*,[]GEOIP,GS  
+ruleset=HK*,[]GEOIP,GT 
+ruleset=HK*,[]GEOIP,GU  
+ruleset=HK*,[]GEOIP,GW  
+ruleset=HK*,[]GEOIP,GY 
+; HK 香港 10749条 1.32.205.2
+ruleset=HK*,[]GEOIP,HK 
+ruleset=HK*,[]GEOIP,HM 
+ruleset=HK*,[]GEOIP,HN  
+ruleset=HK*,[]GEOIP,HR 
+ruleset=HK*,[]GEOIP,HT 
+ruleset=HK*,[]GEOIP,HU 
+; ID 印尼 7437条 3.5.36.0
+ruleset=SG*,[]GEOIP,ID  
+; IE 爱尔兰 7389条 2.17.172.4
+ruleset=DE*,[]GEOIP,IE 
+; IL 以色列 2547条 5.102.192.8
+ruleset=HK+SG,[]GEOIP,IL 
+ruleset=HK*,[]GEOIP,IM 
+; IN 印度 14409条 1.6.1.113
+ruleset=HK+SG,[]GEOIP,IN 
+ruleset=HK*,[]GEOIP,IO 
+ruleset=HK*,[]GEOIP,IQ 
+; IR 伊朗 2370条 2.184.70.119
+ruleset=DE,[]GEOIP,IR 
+ruleset=HK*,[]GEOIP,IS 
+; IT 意大利 11013条 2.16.17.4
+ruleset=HK*,[]GEOIP,IT  
+ruleset=HK*,[]GEOIP,JE 
+ruleset=HK*,[]GEOIP,JM 
+ruleset=HK*,[]GEOIP,JO  
+; JP 日本 12112条 1.32.226.103
+ruleset=JP*,[]GEOIP,JP  
+;ruleset=TW*,[]GEOIP,JP  
+ruleset=HK*,[]GEOIP,KE 
+ruleset=HK*,[]GEOIP,KG  
+ruleset=HK*,[]GEOIP,KH 
+ruleset=HK*,[]GEOIP,KI 
+ruleset=HK*,[]GEOIP,KM 
+ruleset=HK*,[]GEOIP,KN 
+ruleset=HK*,[]GEOIP,KP 
+; KR 韩国 3649条 34.64.142.19
+ruleset=HK*,[]GEOIP,KR 
+;ruleset=TW*,[]GEOIP,KR 
+;ruleset=JP*,[]GEOIP,KR 
+ruleset=HK*,[]GEOIP,KW  
+ruleset=HK*,[]GEOIP,KY 
+ruleset=HK*,[]GEOIP,KZ  
+ruleset=HK*,[]GEOIP,LA  
+ruleset=HK*,[]GEOIP,LB  
+ruleset=HK*,[]GEOIP,LC  
+ruleset=HK*,[]GEOIP,LI  
+ruleset=HK*,[]GEOIP,LK  
+ruleset=HK*,[]GEOIP,LR  
+ruleset=HK*,[]GEOIP,LS  
+ruleset=HK*,[]GEOIP,LT  
+ruleset=HK*,[]GEOIP,LU  
+ruleset=HK*,[]GEOIP,LV  
+ruleset=HK*,[]GEOIP,LY 
+ruleset=HK*,[]GEOIP,MA 
+ruleset=HK*,[]GEOIP,MC 
+ruleset=HK*,[]GEOIP,MD 
+ruleset=HK*,[]GEOIP,ME 
+ruleset=HK*,[]GEOIP,MF 
+ruleset=HK*,[]GEOIP,MG 
+ruleset=HK*,[]GEOIP,MH  
+ruleset=HK*,[]GEOIP,MK 
+ruleset=HK*,[]GEOIP,ML 
+ruleset=HK*,[]GEOIP,MM 
+ruleset=HK*,[]GEOIP,MN 
+ruleset=HK*,[]GEOIP,MO 
+ruleset=HK*,[]GEOIP,MP 
+ruleset=HK*,[]GEOIP,MQ 
+ruleset=HK*,[]GEOIP,MR 
+ruleset=HK*,[]GEOIP,MS 
+ruleset=HK*,[]GEOIP,MT 
+ruleset=HK*,[]GEOIP,MU 
+ruleset=HK*,[]GEOIP,MV 
+ruleset=HK*,[]GEOIP,MW 
+; MX 墨西哥 3656条 3.5.192.110
+ruleset=JP*,[]GEOIP,MX  
+;ruleset=HK*,[]GEOIP,MX  
+;ruleset=TW*,[]GEOIP,MX  
+; MY 马来西亚 2485条 1.9.243.77
+ruleset=HK+SG,[]GEOIP,MY 
+ruleset=HK*,[]GEOIP,MZ 
+ruleset=HK*,[]GEOIP,NA 
+ruleset=HK*,[]GEOIP,NC 
+ruleset=HK*,[]GEOIP,NE 
+ruleset=HK*,[]GEOIP,NF  
+ruleset=HK*,[]GEOIP,NG  
+ruleset=HK*,[]GEOIP,NI 
+;ruleset=HK*,[]GEOIP,NL  
+; NO 挪威 3951条 5.22.232.5
+ruleset=DE*,[]GEOIP,NO 
+ruleset=HK*,[]GEOIP,NP 
+ruleset=HK*,[]GEOIP,NR 
+ruleset=HK*,[]GEOIP,NU 
+; NZ 新西兰 3637条 23.43.144.2
+ruleset=HK+SG,[]GEOIP,NZ 
+ruleset=HK*,[]GEOIP,OM 
+ruleset=HK*,[]GEOIP,PA 
+ruleset=HK*,[]GEOIP,PE 
+ruleset=HK*,[]GEOIP,PF 
+ruleset=HK*,[]GEOIP,PG 
+; PH 菲律宾 2309条 1.37.29.178
+ruleset=HK*,[]GEOIP,PH  
+ruleset=HK+SG,[]GEOIP,PH  
+ruleset=HK*,[]GEOIP,PK  
+; PL 波兰 8083条 2.16.172.4
+ruleset=HK*,[]GEOIP,PL 
+ruleset=HK*,[]GEOIP,PM  
+ruleset=HK*,[]GEOIP,PN 
+ruleset=HK*,[]GEOIP,PR
+ruleset=HK*,[]GEOIP,PS  
+ruleset=HK*,[]GEOIP,PT  
+ruleset=HK*,[]GEOIP,PW 
+ruleset=HK*,[]GEOIP,PY  
+ruleset=HK*,[]GEOIP,QA
+ruleset=HK*,[]GEOIP,RE  
+; RO 罗马尼亚 4178条 2.17.116.4
+ruleset=DE*,[]GEOIP,RO 
+ruleset=HK*,[]GEOIP,RS 
+; RU 俄罗斯 17017条 2.16.53.6
+ruleset=HK*,[]GEOIP,RU 
+ruleset=HK*,[]GEOIP,RW 
+ruleset=HK*,[]GEOIP,SA 
+ruleset=HK*,[]GEOIP,SB 
+ruleset=HK*,[]GEOIP,SC 
+ruleset=HK*,[]GEOIP,SD 
+; SE 瑞典 11660条 2.16.23.51
+ruleset=HK*,[]GEOIP,SE 
+;ruleset=HK*,[]GEOIP,SG 
+ruleset=HK*,[]GEOIP,SH
+ruleset=HK*,[]GEOIP,SI 
+ruleset=HK*,[]GEOIP,SJ
+ruleset=HK*,[]GEOIP,SK  
+ruleset=HK*,[]GEOIP,SL  
+ruleset=HK*,[]GEOIP,SM  
+ruleset=HK*,[]GEOIP,SN  
+ruleset=HK*,[]GEOIP,SO 
+ruleset=HK*,[]GEOIP,SR  
+ruleset=HK*,[]GEOIP,SS  
+ruleset=HK*,[]GEOIP,ST  
+ruleset=HK*,[]GEOIP,SV 
+ruleset=HK*,[]GEOIP,SX 
+ruleset=HK*,[]GEOIP,SY  
+ruleset=HK*,[]GEOIP,SZ 
+ruleset=HK*,[]GEOIP,TC 
+ruleset=HK*,[]GEOIP,TD  
+ruleset=HK*,[]GEOIP,TF 
+ruleset=HK*,[]GEOIP,TG  
+; TH 泰国 2129条 1.0.141.27
+ruleset=HK*,[]GEOIP,TH  
+ruleset=HK*,[]GEOIP,TJ 
+ruleset=HK*,[]GEOIP,TK
+ruleset=HK*,[]GEOIP,TL 
+ruleset=HK*,[]GEOIP,TM 
+ruleset=HK*,[]GEOIP,TN 
+ruleset=HK*,[]GEOIP,TO  
+; TR 土耳其 3671条 2.16.150.154
+ruleset=HK*,[]GEOIP,TR 
+ruleset=HK*,[]GEOIP,TT 
+ruleset=HK*,[]GEOIP,TV 
+;ruleset=HK*,[]GEOIP,TW  
+ruleset=HK*,[]GEOIP,TZ
+; UA 乌克兰 5997条 2.21.89.4
+ruleset=HK*,[]GEOIP,UA
+ruleset=HK*,[]GEOIP,UG 
+ruleset=HK*,[]GEOIP,UM  
+;ruleset=HK*,[]GEOIP,US
+ruleset=HK*,[]GEOIP,UY 
+ruleset=HK*,[]GEOIP,UZ  
+ruleset=HK*,[]GEOIP,VA 
+ruleset=HK*,[]GEOIP,VC  
+ruleset=HK*,[]GEOIP,VE  
+ruleset=HK*,[]GEOIP,VG  
+ruleset=HK*,[]GEOIP,VI 
+; VN 越南 2578条 8.209.44.237
+ruleset=HK*,[]GEOIP,VN 
+ruleset=HK*,[]GEOIP,VU 
+ruleset=HK*,[]GEOIP,WF 
+ruleset=HK*,[]GEOIP,WS 
+ruleset=HK*,[]GEOIP,XK 
+ruleset=HK*,[]GEOIP,YE 
+ruleset=HK*,[]GEOIP,YT 
+; ZA 南非 4916条 2.16.109.69
+ruleset=HK*,[]GEOIP,ZA 
+ruleset=HK*,[]GEOIP,ZM 
+ruleset=HK*,[]GEOIP,ZW  
