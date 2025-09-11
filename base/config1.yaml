@@ -1,0 +1,14 @@
+ipv6: true   # 开启 IPv6 支持
+dns:
+  enable: true
+  listen: '127.0.0.1:8853'
+  default-nameserver:
+    - 223.5.5.5             # 阿里
+    - 119.29.29.29          # 腾讯
+    - 2606:4700:4700::1111  # IPv6配置
+    - 208.67.220.220        # OpenDNS
+    - 1.2.4.8               # CNNIC 反污染
+  enhanced-mode: fake-ip
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://1.1.1.1/dns-query
