@@ -1,28 +1,26 @@
-### Clash 订阅转换：[墙洞转换](https://sub.dler.io/) 
-### Clashmeta 订阅转换： [肥羊转换](sub.v1.mk)
-
-.
-
-## ----------  「远程配置」填入规则，可合并多个鸡场订阅   ----------
-
-.
 ##### 备注 1：测速链接不同只是为了方便自动选择，测试结果延迟高低对节点无影响。
 ##### 备注 2：Clash 规则其他软件也可套用，包括 singbox，已标出例外。暂未给其他软件写规则，对应的分流应该会自动适配。（singbox 偶尔不兼容）
+
+### 直接使用
+#### fatsheep.yzcjd.workers.dev
+
+### 其他订阅转换套用
+##### 「远程配置」填入规则，可合并多个鸡场订阅
+#### Clashmeta 订阅转换： sub.v1.mk
+#### Clash 订阅转换：sub.dler.io
 .
 
-.
-
-#### 选购建议：
+#### 使用建议：
 ##### 不知道怎么用 => 导入第一个规则 clash.ini 试试
 ##### 日常浏览 => V2fly 规则（防延迟劫持）
 ##### 同时看多个视频网站 =>  负载均衡规则（load）
-##### Telegram 重度用户 => TG 优化规则 三选一，常看中文频道选 tg 规则，常看欧美频道选 tg2 或 tg3（tg3 需有港新澳台马以外线路）；
-##### PS：推荐尝试 GEOIP 规则自动分流
+##### Telegram 重度用户 => TG 优化规则 三选一，常看中文频道选 tg 规则，常看欧美频道选 tg2 或 tg3（tg3 需有港新澳台马印以外线路）；
+##### 推荐尝试 GEOIP 规则自动分流
 .
 
 .
 
-### ① 白名单规则【clash.ini】
+### 白名单规则【clash.ini】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 .
 ##### 1. 测速链接使用“ http://www.gstatic.com/generate_204 ”（clash 默认）
@@ -33,7 +31,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.ini
 
 .
 
-### ② 轻量白名单规则【lite】
+### 轻量白名单规则【lite】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 .
 ##### 港日新+手动
@@ -42,7 +40,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.lite.ini
 
 .
 
-### ③ 全局规则【global】
+### 全局规则【global】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.global.ini
 .
 ##### 1. 全局规则 + 地区分组 。解决全局模式下不能自动选择的问题。
@@ -79,7 +77,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg2.ini
 ### TG 优化规则3【tg3】
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.tg3.ini
 ##### 1. 综合中文频道和英文频道规则，适合综合浏览。
-##### 2. 港新马台澳测试 “ http://91.108.56.200 ”，其它测试 “ http://149.154.164.250 ”。常用地区自动选择；
+##### 2. 港新马台澳印测试 “ http://91.108.56.200 ”，其它测试 “ http://149.154.164.250 ”。常用地区自动选择；
 ##### 3. 屏蔽常见广告，尽量做到无误杀，具体查看 https://raw.githubusercontent.com/yzcjd/website-rules/1/REJECT
 ##### 4. surfboard 用这规则偶尔报错。
 .
@@ -95,17 +93,6 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 ##### 需确定机场的节点为同一地区，否则可能遇到 Google 人机验证。
 测试网页 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 域名（xx.xx.com）/ ip 在 ping0.cc / ip.sb 搜索。
 ##### surfboard 可用
-.
-
-.
-
-### Google优化【google】（闲置）
-https://raw.githubusercontent.com/yzcjd/proxy-rules/main/file/clash.google.ini
-.
-#### 特点
-##### 测试 本地 => 节点 => Google 美国服务器，能看出节点的国际互联情况；
-##### 参考值：300ms ；合格值：600ms 我猜的。
-##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 .
 
 .
