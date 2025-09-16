@@ -2,12 +2,12 @@
 ##### 备注 2：Clash 规则其他软件也可套用，包括 singbox，已标出例外。暂未给其他软件写规则，对应的分流应该会自动适配。（singbox 偶尔不兼容）
 
 ### 直接使用
-#### fatsheep.yzcjd.workers.dev
+#### https://fatsheep.yzcjd.workers.dev
 
 ### 其他订阅转换套用
 ##### 「远程配置」填入规则，可合并多个鸡场订阅
-#### Clashmeta 订阅转换： sub.v1.mk
-#### Clash 订阅转换：sub.dler.io
+#### Clashmeta 订阅转换： https://sub.v1.mk
+#### Clash 订阅转换：https://sub.dler.io
 .
 
 #### 使用建议：
