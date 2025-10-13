@@ -111,7 +111,8 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.v2fly.ini
 https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.cool.ini
 .
 #### 特点
-##### Google 服务可选地区（已注释），Telegram、GitHub 等常用网站优化，浏览网页排除送中节点，看视频排除 IEPL 专线节点。你的线路如果送中，名字添加 sz，浏览网页将不会选中他。
+##### Google 服务可选地区（已注释），GitHub、x、netflix、openai、imgur等常用网站优化，全自动无需手动选。
+##### 浏览网页排除送中节点，看视频排除 IEPL 专线节点。如果全是专线（名字全部带IEPL/IPLC，必须手动改名字才能用），你的线路如果送中，名字添加 sz，浏览网页将不会选中他。
 ##### 该规则 surfboard 不可套用（内含 https 测速链接）。
 ##### PS：这仅是本人自用规则。推荐尝试 GEOIP 规则自动分流，手动添加的规则永远有优化空间。
 .
