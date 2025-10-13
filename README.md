@@ -90,7 +90,7 @@ https://raw.githubusercontent.com/yzcjd/proxy-rules/main/clash.load.ini
 #### 特点
 ##### 测速链接同 Clash 默认。负载均衡模式下延迟无意义，保证你节点带宽足够就行。
 ##### 每个域名用不同的节点，举例：可以实现 TG 视频、YouTube、TED 同时播放网速不冲突。
-##### 需确定机场的节点为同一地区，否则可能遇到 Google 人机验证。
+##### 需确定机场的节点为同一地区（比如标注新加坡实际为香港），否则可能遇到 Google 人机验证。
 测试网页 [ip.sb](https://ip.sb/) ，①连上节点打开网站 **OR** ②复制 域名（xx.xx.com）/ ip 在 ping0.cc / ip.sb 搜索。
 ##### surfboard 可用
 .
