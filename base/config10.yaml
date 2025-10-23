@@ -21,27 +21,24 @@ dns:
   enable: true
   listen: '127.0.0.1:8853'
   default-nameserver:
-    - 211.136.192.6       # 中国移动
+    - 221.4.66.66         # 广州联通
+    - 211.136.192.6       # 广州移动
     - 119.29.29.29        # 腾讯
     - 208.67.220.220      # OpenDNS
     - 1.2.4.8             # CNNIC 反污染
   nameserver:
     - https://8.8.8.8/dns-query
     - https://1.1.1.1/dns-query
-    - 8.8.8.8
-    - 208.67.220.220
-    - 119.29.29.29
-    - 211.136.192.6
   fallback:
     - https://dns.rubyfish.cn/dns-query
     - https://doh.pub/dns-query
     - https://rubyfish.cn/dns-query
     - https://public.dns.iij.jp/dns-query
-    - tls://8.8.4.4
     - https://cloudflare-dns.com/dns-query
     - https://1.1.1.1/dns-query
     - tls://1.1.1.1:853
     - tls://8.8.8.8:853
+    - tls://8.8.4.4
   ipv6: true
   enhanced-mode: fake-ip
   fallback-filter:
