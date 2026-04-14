@@ -1,60 +1,26 @@
+# 作者为电报@yzcjd，2026/4/14
+
 dns:
   enable: true
-  listen: 0.0.0.0:1053
-  ipv6: false
-
-  # 防污染关键
+  listen: 127.0.0.1:1053
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
 
-  # 默认 DNS（系统 fallback 前用）
-  default-nameserver:
+  default-nameserver: # 仅用于解析 DoH,平时不干活
     - 223.5.5.5
     - 119.29.29.29
 
-  # 主要解析（走代理前）
-  nameserver:
-    # 国内 DoH（联通友好）
-    - https://sm2.doh.pub/dns-query  #腾讯DoH (国密 SM2)
+  proxy-server-nameserver: # 让 DNS 请求走代理，否则是直连（慢）
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+
+  nameserver: # 访问国内网站
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
 
-  # fallback（国外，防污染）
-  fallback:
-    - https://1.1.1.1/dns-query
-    - https://cloudflare-dns.com/dns-query
-
-  # fallback 触发规则（关键）
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
-
-  # 强制指定 DNS（避免污染）
-  nameserver-policy:
-    "geosite:cn":
+  nameserver-policy: # 主要逻辑：国内走直连 DoH（腾讯+阿里），国外走国外 DoH（CF+Google）
+    geosite:cn:
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
-
-    "geosite:geolocation-!cn":
+    geosite:geolocation-!cn:
       - https://1.1.1.1/dns-query
-      - https://cloudflare-dns.com/dns-query
-
-# 明文 DNS 可能导致泄漏（ChatGPT 说的）
-# - 221.4.66.66         # 广州联通
-#  - 211.136.192.6       # 广州移动
-# - 119.29.29.29        # 腾讯
-# - 8.8.8.8             # 谷歌
-# - 208.67.220.220      # OpenDNS
-# - 1.2.4.8             # CNNIC 反污染
-
-# 似乎没明显效果的 oH
-# - https://sm2.doh.pub/dns-query  #腾讯DoH (国密 SM2)
-#  - https://dns.rubyfish.cn/dns-query
-# - https://doh.pub/dns-query
-# - https://rubyfish.cn/dns-query
-# - https://public.dns.iij.jp/dns-query
-# - https://cloudflare-dns.com/dns-query
-# - https://1.1.1.1/dns-query
+      - https://8.8.8.8/dns-query
