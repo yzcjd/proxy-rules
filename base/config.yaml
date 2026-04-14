@@ -3,20 +3,21 @@
 
 mixed-port: 7890
 allow-lan: false
-bind-address: '*'
+bind-address: "*"
 mode: Rule # 似乎必加，才能让国外 DNS 请求走代理
 log-level: info
-ipv6: false # v6解析容易产生泄漏
+ipv6: false # v6 解析容易产生泄漏
 external-controller: 127.0.0.1:9090
+
 profile:
   tracing: true
-  
+
 dns:
   enable: true
   listen: 127.0.0.1:1053
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter: # 防异常域名（避免 fake-ip 出问题）
+  fake-ip-filter:
     - "*.lan"
     - "*.local"
     - localhost
@@ -29,6 +30,7 @@ dns:
     - "*.msftncsi.com"
     - "*.apple.com"
     - "*.icloud.com"
+    - "*.microsoft.com"
 
   default-nameserver: # 仅用于解析 DoH,平时不干活。允许少量泄漏
     - 223.5.5.5
@@ -37,15 +39,37 @@ dns:
   proxy-server-nameserver: # 让国外 DNS 请求走代理，运营商看不到咱的请求。而且要强制 ip 解析避免先使用 default-nameserver 导致泄漏。
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
+    - tls://1.1.1.1:853
+    - tls://8.8.8.8:853
 
-  nameserver: # 访问国内网站用直连DNS，保证速度
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
+  nameserver:  # 访问国内网站用直连 DNS，保证速度
+    - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
+    - https://dns.google/dns-query
 
   nameserver-policy: # DNS 分流核心，主要逻辑：国内走直连 DoH（腾讯+阿里），国外走国外 DoH（CF+Google）
     "geosite:cn":
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
-    "geosite:!cn":
-      - https://1.1.1.1/dns-query
-      - https://8.8.8.8/dns-query
+
+  fallback: # 污染兜底
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+    - tls://dns.google:853
+
+  fallback-filter: # 防异常域名（避免 fake-ip 出问题）
+    geoip: true
+    geoip-code: CN
+    domain:
+      - "+.google.com"
+      - "+.youtube.com"
+      - "+.github.com"
+      - "+.twitter.com"
+      - "+.discord.com"
+
+  # ========================
+  # 性能优化（关键升级）
+  # ========================
+  use-hosts: true
+  cache-size: 10000
+  prefer-h3: true
