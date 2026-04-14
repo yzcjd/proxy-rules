@@ -9,7 +9,7 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
 
-  proxy-server-nameserver: # 让 DNS 请求走代理，否则是直连（慢）
+  proxy-server-nameserver: # 让 DNS 请求走代理，运营商看不到咱的请求。
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
 
