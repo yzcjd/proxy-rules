@@ -1,83 +1,60 @@
-mixed-port: 7890
-allow-lan: false
-bind-address: '*'
-mode: Rule
-log-level: info
-ipv6: true
-
-hosts:
-  services.googleapis.cn: 216.58.200.67
-  www.google.cn: 216.58.200.67
-
-external-controller: '0.0.0.0:9090'
-
-clash-for-android:
-  append-system-dns: false
-
-profile:
-  tracing: true
-
 dns:
   enable: true
-  listen: '127.0.0.1:8853'
-  default-nameserver:
-    - 221.4.66.66         # 广州联通
-    - 211.136.192.6       # 广州移动
-  nameserver:
-    - https://sm2.doh.pub/dns-query  #腾讯DoH (国密 SM2)
-    - 221.4.66.66         # 广州联通
-    - 211.136.192.6       # 广州移动
-    - 119.29.29.29        # 腾讯
-    - 8.8.8.8             # 谷歌
-    - 208.67.220.220      # OpenDNS
-    - 1.2.4.8             # CNNIC 反污染
-    - https://8.8.8.8/dns-query
-    - https://1.1.1.1/dns-query
-  fallback:
-    - https://dns.rubyfish.cn/dns-query
-    - https://doh.pub/dns-query
-    - https://rubyfish.cn/dns-query
-    - tls://8.8.4.4
-    - https://public.dns.iij.jp/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://1.1.1.1/dns-query
-    - tls://1.1.1.1:853
-    - tls://8.8.8.8:853
-  ipv6: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+
+  # 防污染关键
   enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+
+  # 默认 DNS（系统 fallback 前用）
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
+  # 主要解析（走代理前）
+  nameserver:
+    # 国内 DoH（联通友好）
+    - https://sm2.doh.pub/dns-query  #腾讯DoH (国密 SM2)
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+
+  # fallback（国外，防污染）
+  fallback:
+    - https://1.1.1.1/dns-query
+    - https://cloudflare-dns.com/dns-query
+
+  # fallback 触发规则（关键）
   fallback-filter:
     geoip: true
-    domain:
-      - +.google.com
-      - +.googleapis.com
-      - +.gvt1.com
-      - +.youtube.com
-      - +.facebook.com
-      - +.twitter.com
-      - +.tiktok.com
-      - +.tiktokv.com
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
-nameserver-policy:
-  www.baidu.com: 114.114.114.114
-  www.taobao.com: 223.5.5.5
-  +.internal.crop.com: 10.0.0.1
+  # 强制指定 DNS（避免污染）
+  nameserver-policy:
+    "geosite:cn":
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
 
-fake-ip-filter:
-  - '*.lan'
-  - 'stun.*.*.*'
-  - 'stun.*.*'
-  - time.windows.com
-  - time.nist.gov
-  - time.apple.com
-  - '*.ntp.org.cn'
-  - '*.openwrt.pool.ntp.org'
-  - pool.ntp.org
-  - ntp.aliyun.com
-  - '*.msftconnecttest.com'
-  - '*.msftncsi.com'
-  - '*.*.*.srv.nintendo.net'
-  - '*.*.stun.playstation.net'
-  - 'xbox.*.*.microsoft.com'
-  - '*.ipv6.microsoft.com'
-  - '*.*.xboxlive.com'
-  - speedtest.cros.wr.pvp.net
+    "geosite:geolocation-!cn":
+      - https://1.1.1.1/dns-query
+      - https://cloudflare-dns.com/dns-query
+
+# 明文 DNS 可能导致泄漏（ChatGPT 说的）
+# - 221.4.66.66         # 广州联通
+#  - 211.136.192.6       # 广州移动
+# - 119.29.29.29        # 腾讯
+# - 8.8.8.8             # 谷歌
+# - 208.67.220.220      # OpenDNS
+# - 1.2.4.8             # CNNIC 反污染
+
+# 似乎没明显效果的 oH
+# - https://sm2.doh.pub/dns-query  #腾讯DoH (国密 SM2)
+#  - https://dns.rubyfish.cn/dns-query
+# - https://doh.pub/dns-query
+# - https://rubyfish.cn/dns-query
+# - https://public.dns.iij.jp/dns-query
+# - https://cloudflare-dns.com/dns-query
+# - https://1.1.1.1/dns-query
