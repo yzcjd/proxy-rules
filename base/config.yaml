@@ -16,19 +16,19 @@ dns:
   listen: 127.0.0.1:1053
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-  - "*.lan"
-  - "*.local"
-  - localhost
-  - "*.arpa"
-  - time.windows.com
-  - "*.ntp.org"
-  - pool.ntp.org
-  - ntp.aliyun.com
-  - "*.msftconnecttest.com"
-  - "*.msftncsi.com"
-  - "*.apple.com"
-  - "*.icloud.com"
+  fake-ip-filter: # 防异常域名（避免 fake-ip 出问题）
+    - "*.lan"
+    - "*.local"
+    - localhost
+    - "*.arpa"
+    - time.windows.com
+    - "*.ntp.org"
+    - pool.ntp.org
+    - ntp.aliyun.com
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - "*.apple.com"
+    - "*.icloud.com"
 
   default-nameserver: # 仅用于解析 DoH,平时不干活。允许少量泄漏
     - 223.5.5.5
@@ -46,3 +46,6 @@ dns:
     "geosite:cn":
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
+    "geosite:!cn":
+      - https://1.1.1.1/dns-query
+      - https://8.8.8.8/dns-query
