@@ -1,3 +1,6 @@
+# 多并发 DNS ，谁快用谁，存在 DNS 泄漏，可能查询错误无法访问，需要刷新。nameserver-policy 直接明文查询
+# 某些机场的默认配置+自加DNS
+
 mixed-port: 7890
 allow-lan: false
 bind-address: '*'
@@ -24,28 +27,21 @@ dns:
     - 221.4.66.66         # 广州联通
     - 211.136.192.6       # 广州移动
   nameserver:
-    - https://sm2.doh.pub/dns-query  #腾讯DoH (国密 SM2)
+    - https://sm2.doh.pub/dns-query  # 腾讯DoH (国密 SM2)
     - 221.4.66.66         # 广州联通
     - 211.136.192.6       # 广州移动
     - 119.29.29.29        # 腾讯
     - 8.8.8.8             # 谷歌
     - 208.67.220.220      # OpenDNS
     - 1.2.4.8             # CNNIC 反污染
-    - https://8.8.8.8/dns-query
-    - https://1.1.1.1/dns-query
+    - 8.8.4.4             # 谷歌2
+    - 1.1.1.1             # CF
   fallback:
-    - https://dns.rubyfish.cn/dns-query
-    - https://doh.pub/dns-query
-    - https://rubyfish.cn/dns-query
-    - tls://8.8.4.4
-    - https://public.dns.iij.jp/dns-query
-    - https://cloudflare-dns.com/dns-query
     - https://1.1.1.1/dns-query
-    - tls://1.1.1.1:853
-    - tls://8.8.8.8:853
-  ipv6: true
-  enhanced-mode: fake-ip
-  fallback-filter:
+    - https://8.8.4.4/dns-query
+  ipv6: true # 可能导致泄漏
+  enhanced-mode: fake-ip # 缓存直接用
+  fallback-filter: # 这个没啥必要
     geoip: true
     domain:
       - +.google.com
