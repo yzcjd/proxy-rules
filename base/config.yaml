@@ -78,9 +78,7 @@ dns:
       - "+.twitter.com"
       - "+.discord.com"
 
-  # ========================
-  # 性能优化（关键升级）
-  # ========================
+ # 性能优化
   use-hosts: true
   cache-size: 10000
   prefer-h3: true
