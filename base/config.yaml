@@ -42,7 +42,7 @@ dns:
     - tls://1.1.1.1:853
     - tls://8.8.8.8:853
 
-  nameserver:  # 访问国内网站用直连 DNS，保证速度
+  nameserver:
     - https://1.1.1.1/dns-query
     - https://1.0.0.1/dns-query
     - https://dns.google/dns-query
@@ -51,6 +51,15 @@ dns:
     "geosite:cn":
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
+    "+.cn":
+      - 223.5.5.5
+      - 119.29.29.29
+    "+.com.cn":
+      - 223.5.5.5
+    "+.gov.cn":
+      - 223.5.5.5
+    "+.org.cn":
+      - 223.5.5.5
 
   fallback: # 污染兜底
     - https://1.1.1.1/dns-query
@@ -60,6 +69,8 @@ dns:
   fallback-filter: # 防异常域名（避免 fake-ip 出问题）
     geoip: true
     geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
     domain:
       - "+.google.com"
       - "+.youtube.com"
